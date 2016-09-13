@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div class="container-fluid content-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 col-sm-3">
+                                <img src="img/header__logo.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-9 col-sm-9 hidden-xs">
+                                <div class="header__top__fb col-md-4 col-xs-4">
+                                    <p><img src="img/fb__icon.png">facebook</p>
+                                </div>
+                                <div class="header__top__contacts col-md-8 col-xs-8 hidden-xs">
+                                    <p class="header__top__contacts__number">8 800 000 00 00</p>
+                                    <p class="header__top__contacts__email">gugr@yandex.ru</p>
+                                </div>
+                            </div>
+                            <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
+                                <img src="img/hamburger__xs.png" alt="">
+                                <img src="img/search__xs.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__stable row">
+                            <nav class="col-md-10 col-xs-12 col-sm-11">
+                                <li class="header__menu__hamburger hidden-xs">
+                                    <a href="#"><img src="img/hamburger__icon.png" alt=""></a>
+                                </li>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Комплексные решения</a></li>
+                                <li><a href="#">Группа компаний БРИЗ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </nav>
+                            <div class="header__menu__search col-md-2 col-sm-1 hidden-xs">
+                                <img src="img/search__icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__dropdown row">
+                            <div class="header__menu__dropdown__search">
+                                <form action="" class="col-md-12">
+                                    <input type="text" placeholder="Найти">
+                                </form>
+                            </div>
+                            <div class="header__menu__dropdown__catalog col-md-12">
+                                <h4>Каталог</h4>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Разметка дорог и парковок</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                </div>
+                                <h4>Комплексные решения</h4>
+                                <h4>Группа компаний "Бриз"</h4>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-Центр</a></li>
+                                        <li class="li__header"><a href="#">Краснодарск</a></li>
+                                        <li class="li__header"><a href="#">Гранд</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-запад</a></li>
+                                        <li class="li__header"><a href="#">Айтехникс</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="#">Новости группы</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="breadcrumbs row">
+                <div class="container-fluid content-wrapper">
+                    <li>
+                        <a href="#"><img src="img/breadcrumb__home.png" alt=""></a>
+                    </li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Дорожно-знаковая информация</a></li>
+                    <li><a href="#">Знаки</a></li>
+                    <li><a href="#">Дорожные</a></li>
+                    <li><a href="#">Название товара</a></li>
+                </div>
+            </div>
+            <div class="container-fluid content-wrapper">
+                <div class="content">
+
+                    <div class="content__left-nav col-md-3 col-lg-3">
+                        <div id="MainMenu">
+                          <div class="list-group panel">
+
+                            <a href="#leftnav1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Дорожно-знаковая информация<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav1">
+                              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu1">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Конструктив<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav2">
+                              <a href="#SubMenu2" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu2">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu2">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu2">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Электронно-импульсная продукция<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav3">
+                              <a href="#SubMenu3" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu3">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu3">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu3">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Монтаж<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav4">
+                              <a href="#SubMenu4" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu4">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu4">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu4">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav5" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Светофорное регулирование<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav5">
+                              <a href="#SubMenu5" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu5">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu5">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu5">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav6" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Разметка дорог и парковок<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav6">
+                              <a href="#SubMenu6" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu6">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu6">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu6">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav7" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Средства организации дорожного движения<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav7">
+                              <a href="#SubMenu7" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu7">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu7">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu7">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav8" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Битумно-полимерная пластика<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav8">
+                              <a href="#SubMenu8" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu8">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu8">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu8">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                            <a href="#leftnav9" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Металлоконструкции<i class="fa fa-caret-down"></i></a>
+                            <div class="collapse" id="leftnav9">
+                              <a href="#SubMenu9" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Знаки <i class="fa fa-caret-down"></i></a>
+                              <div class="collapse list-group-submenu" id="SubMenu9">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu9">Дорожные</a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu9">Охраны труда и безопасности</a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item">Таблички</a>
+                              <a href="javascript:;" class="list-group-item">Еще что-нибудь</a>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="content__descr col-md-6 col-lg-6">
+                        <h1>Название товара</h1>
+                        <div class="content__descr__main-params">
+                           <h3>Основные характеристики</h3>
+                           <div class="content__descr__main-params__name">
+                               <p id="main-params-name-1">Знак</p>
+                               <p id="main-params-name-2"">Типоразмер</p>
+                               <p id="main-params-name-3"">Стойка</p>
+                               <p id="main-params-name-4"">Включение</p>
+                               <p id="main-params-name-5"">Технический короб</p>
+                           </div>
+                           <div class="content__descr__main-params__value">
+                               <p id="main-params-value-1">&laquo;Уступи дорогу&raquo; 2.4</p>
+                               <p id="main-params-value-2">III (900x900мм)</p>
+                               <p id="main-params-value-3">труба D=280мм</p>
+                               <p id="main-params-value-4">автоматическое</p>
+                               <p id="main-params-value-5">на стойке</p>
+                           </div>
+                        </div>
+                        <div class="content__descr__img">
+                            <figure class="content__descr__img__main">
+                                <a class="fancybox" rel="group" href="img/item-img-main.png"><img src="img/item-img-main.png" alt="" /></a>
+                                <div class="content__descr__img__main__text">Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамповки с двойной отбортовкой по всему периметру.</figcaption>
+                            </figure>
+                            <div class="content__descr__img__secondary">
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_01.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
+                                </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_02.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
+                                </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_03.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
+                                </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_04.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__descr__text">
+                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения. Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения</p>
+                        </div>
+                        <div class="content__form">
+                            <div class="content__form__content">
+                                <h4>Ответим на ваши вопросы</h4>
+                                <form action="">
+                                    <textarea name="" id="" placeholder="Сообщение и вопросы"></textarea>
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Эл. почта или телефон">
+                                    <p>
+                                        <input type="radio" name="customer-type" id="person" value="person"><label for="person">Частное лицо</label>
+                                        <input type="radio" name="customer-type" id="company" value="company"><label for="company">Компания</label>
+                                    </p>
+                                    <input type="text" id="companyname" placeholder="Название">
+                                </form>
+                            </div>
+                            <div class="content__form__button">
+                                <input type="submit" id="submit" value="Отправить">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__rightbar col-md-3 col-lg-3">
+                        <div class="content__rightbar__producer">
+                            <div class="content__rightbar__producer__info">
+                                <h5>Производитель</h5>
+                                <img src="img/item-producer-itechniks.png" alt="">
+                                <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
+                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О компании</a></span>
+                            </div>
+                            <div class="content__rightbar__producer__contacts itechniks">
+                                <p class="content__rightbar__producer__contacts__tel">8 (391) 204 04 70</p>
+                                <p class="content__rightbar__producer__contacts__email">demomail@mail.ru</p>
+                                <p><a href="#">Контакты</a></p>
+                            </div>
+                        </div>
+                        <div class="content__rightbar__producer">
+                            <div class="content__rightbar__producer__info">
+                                <h5>Производитель</h5>
+                                <img src="img/item-producer-kdz.png" alt="">
+                                <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
+                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О компании</a></span>
+                            </div>
+                            <div class="content__rightbar__producer__contacts kdz">
+                                <p class="content__rightbar__producer__contacts__tel">8 (391) 204 04 70</p>
+                                <p class="content__rightbar__producer__contacts__email">demomail@mail.ru</p>
+                                <p><a href="#">Контакты</a></p>
+                            </div>
+                        </div>
+                        <div class="content__rightbar__docs">
+                            <h5>Сертификаты</h5>
+                            <p class="content__rightbar__docs__name"><a href="#">Методика поверки<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">12,23 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Описание типа<span class="ppttype">.ppt&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">5,55 МБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Свидетельство Госреестра<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">2,39 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Сертификат соответствия<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">1,96 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Разрешение ФСЭТАН<span class="exltype">.exl&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">4,35 МБ</p>
+                            <h5>Документация</h5>
+                            <p class="content__rightbar__docs__name"><a href="#">Руководство по эксплуатации<span class="pdftype">.pdf&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">2,39 МБ</p>
+                        </div>
+                        <div class="content__rightbar__appfield">
+                            <h5>Области применения</h5>
+                            <p>Парковка</p>
+                            <p>Обозначение перекрестков</p>
+                            <p>Еще способ применения в несколько строчек</p>
+                            <p>И последний способ, неочевидный</p>
+                        </div>
+                        <div class="content__rightbar__mention">
+                            <img src="img/item-news-mention.png" alt="">
+                            <h5>Упоминание в новостях или ссылка на комплексное решение</h5>
+                            <p class="content__rightbar__mention__text">Описание краткое система управления дорожным движением.Комплекс технических мер. Правления дорожным движением.Комплекс технических мер. Описание краткое система управления дорожным движением.</p>
+                            <p class="content__rightbar__mention__date">28 ноября 2016</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="content__other-items row col-xs-12 col-sm-12 col-md-12 ">
+                        <div class="content__other-items__prev col-xs-12 col-sm-6 col-md-6">
+                            <div class="content__other-items__prev__nav hidden-xs col-sm-2 col-md-2">
+                                <p>&larr; Ctrl</p>
+                            </div>
+                            <div class="content__other-items__prev__item col-sm-6 col-md-6">
+                                <figure>
+                                    <img src="img/item-prev.png" alt="">
+                                    <figcaption>
+                                        <h5>Название предыдущего товара</h5>
+                                        Такие устройства регулируют движение автотранспортных средств.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="content__other-items__next col-xs-12 col-sm-6 col-md-6">
+                            <div class="content__other-items__prev__item col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
+                                <figure>
+                                    <img src="img/item-next.png" alt="">
+                                    <figcaption>
+                                        <h5>Название предыдущего товара</h5>
+                                        Такие устройства регулируют движение автотранспортных средств.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content__other-items__next__nav hidden-xs col-sm-2 col-md-2">
+                                <p>Ctrl &rarr;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="row">
+                            <nav class="col-md-10">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Комплексные решения</a></li>
+                                <li><a href="#">Группа компаний БРИЗ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container-fluid content-wrapper">
+                        <div class="row hidden-xs hidden-sm">
+                            <div class="footer__copyright__bureauit col-md-5">
+                                Разработка сайта - <img src="img/footer__bureauit.png">
+                            </div>
+                            <div class="footer__copyright__contacts col-md-7">
+                                <div class="footer__copyright__contacts__fb col-md-4">
+                                    <img src="img/fb__icon.png" alt=""> facebook
+                                </div>
+                                <div class="footer__copyright__contacts__email col-md-8">
+                                    <p>8 800 555 35 35</p>
+                                    <p>gugr@yandex.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hidden-xs hidden-sm">
+                            <div class="footer__copyright__briz col-md-6 col-md-offset-3">
+                                <p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</p>
+                            </div>
+                        </div>
+                        <div class="row hidden-md hidden-lg">
+                            <div class="footer__copyright__contacts__email col-xs-5">
+                                <p>8 800 555 35 35</p>
+                            </div>
+                            <div class="footer__copyright__contacts__email col-xs-5">
+                                <p>gugr@yandex.ru</p>
+                            </div>
+                            <div class="footer__copyright__contacts__fb col-xs-2">
+                                    <img src="img/fb__icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row hidden-md hidden-lg">
+                        	<div class="footer__copyright__briz col-xs-8">
+                        		<p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены<p>
+                        	</div>
+                            <div class="footer__copyright__bureauit col-xs-4">
+                                Разработка &ndash; <img src="img/footer__bureauit.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(document.body).ready(function () {
+            $(".fancybox").fancybox();
+
+            $("#person").click(function () {
+              $("#companyname").hide();
+            });
+
+            $("#company").click(function () {
+              $("#companyname").show();
+            });
+
+            $("#submit").click(function () {
+              swal({
+                title: "Ваше сообщение отправлено!",   
+                text: "Мы свяжемся с вами в ближайшее время",   
+                type: "success",   
+                confirmButtonText: "OК" });
+            });
+
+            $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close').click(function () {
+                $('.header__menu__dropdown').slideToggle('slow', function () {
+                    if ($(this).is(":visible")) {
+                        $('.header__menu__stable').css("opacity", "0.3");
+                    } else {
+                        $('.header__menu__stable').css("opacity", "1");
+                    }
+                });
+            });
+            $('.content__manufactor-tag__li').click(function () {
+                $('.content__manufactor-tag__li').each(function (i, elem) {
+                    console.log(elem);
+                    $(elem).removeClass('active-tag');
+                });
+                var firm = $(this).data('firm').toString();
+                $(this).addClass('active-tag');
+                $('.content__manufactor__tab').each(function (i, elem) {
+                    var firms = $(this).data('firm').split(',');
+                    if (firms.indexOf(firm.toString()) == -1) {
+                        $(elem).fadeOut('slow');
+                    } else {
+                        $(elem).fadeIn('slow');
+                    }
+                });
+            });
+            var childs = $('.content__manufactor__column:nth-child(3)').children('.content__manufactor__tab, .content__manufactor__tab--form');
+            $(window).resize(function () {
+                if ($(window).width() < 991) {
+                    $('.content__manufactor__column:nth-child(1)').css("padding-right", "20px");
+                    $('.content__manufactor__column:nth-child(2)').css("padding", "0");
+                    $('.content__manufactor__column:nth-child(3)').css("display", "none");
+                    $(childs).each(function (i) {
+                        if (i == 0 || i % 2) {
+                            $(this).clone().appendTo($('.content__manufactor__column:nth-child(1)'));
+                        } else {
+                            $(this).clone().appendTo($('.content__manufactor__column:nth-child(2)'));
+                        }
+                    });
+                    childs = 0;
+                }
+                if ($(window).width() < 768) {
+                    $('.content__manufactor__column:nth-child(1)').css("padding", "0");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
