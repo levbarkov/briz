@@ -7,12 +7,13 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Контакты</title>
 </head>
 
 <body>
@@ -21,37 +22,35 @@
             <div class="header">
                 <div class="header__top">
                     <div class="container-fluid content-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6 col-sm-3">
+                            <div class="header__top__logo col-md-6 col-xs-6 col-sm-3">
                                 <img src="img/header__logo.png" alt="">
                             </div>
-                            <div class="col-md-6 col-xs-9 col-sm-9 hidden-xs">
-                                <div class="header__top__fb col-md-4 col-xs-4">
-                                    <p><img src="img/fb__icon.png">facebook</p>
+                            <div class="header__top__info col-md-6 col-xs-9 col-sm-9 hidden-xs">
+                                <div class="header__top__info__fb col-md-4 col-xs-4">
+                                    <p><a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a></p>
                                 </div>
-                                <div class="header__top__contacts col-md-8 col-xs-8 hidden-xs">
-                                    <p class="header__top__contacts__number">8 800 000 00 00</p>
-                                    <p class="header__top__contacts__email">gugr@yandex.ru</p>
+                                <div class="header__top__info__contacts col-md-8 col-xs-8 hidden-xs">
+                                    <p class="header__top__info__contacts__number"><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
+                                    <p class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru">briz@briz2001.ru</a></p>
                                 </div>
                             </div>
                             <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
                                 <img src="img/hamburger__xs.png" alt="">
                                 <img src="img/search__xs.png" alt="">
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="header__menu">
                     <div class="container-fluid content-wrapper">
-                        <div class="header__menu__stable row">
+                        <div class="header__menu__stable">
                             <nav class="col-md-10 col-xs-12 col-sm-11">
                                 <li class="header__menu__hamburger hidden-xs">
                                     <a href="#"><img src="img/hamburger__icon.png" alt=""></a>
                                 </li>
-                                <li><a href="#">Каталог</a></li>
-                                <li><a href="#">Комплексные решения</a></li>
-                                <li><a href="#">Группа компаний БРИЗ</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li id="nav-catalog"><a href="#">Каталог</a></li>
+                                <li id="nav-complex"><a href="#">Комплексные решения</a></li>
+                                <li id="nav-group"><a href="#">Группа компаний БРИЗ</a></li>
+                                <li id="nav-contacts"><a href="#">Контакты</a></li>
                             </nav>
                             <div class="header__menu__search col-md-2 col-sm-1 hidden-xs">
                                 <img src="img/search__icon.png" alt="">
@@ -67,7 +66,7 @@
                             </div>
                             <div class="header__menu__dropdown__catalog col-md-12">
                                 <h4>Каталог</h4>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6">
                                     <ul>
                                         <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
                                         <li><a href="#">Знаки</a></li>
@@ -90,7 +89,7 @@
                                         <li><a href="#">Монтаж</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4  col-sm-6">
                                     <ul>
                                         <li class="li__header"><a href="#">Разметка дорог и парковок</a></li>
                                         <li><a href="#">Знаки</a></li>
@@ -106,7 +105,7 @@
                                         <li><a href="#">Монтаж</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4  col-sm-6">
                                     <ul>
                                         <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
                                         <li><a href="#">Знаки</a></li>
@@ -142,290 +141,287 @@
                 </div>
             </div>
         </header>
-        <div class="container-fluid">
-            <div class="breadcrumbs row">
+        <div class="container-fluid main">
+            <div class="breadcrumbs">
                 <div class="container-fluid content-wrapper">
                     <li>
                         <a href="#"><img src="img/breadcrumb__home.png" alt=""></a>
                     </li>
-                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </div>
             </div>
             <div class="container-fluid content-wrapper">
                 <div class="content">
-                    <div class="content__contacts row">
-                        <div class="col-md-12">
+                    <div class="content__contacts">
                             <h1>Контакты</h1>
 
-                            <div class="content__contacts__item row col-md-12 col-sm-12 col-xs-12">
+                            <div class="content__contacts__item col-md-12 col-sm-12 col-xs-12">
                                 <div class="content__contacts__item__name col-md-12 col-sm-12 col-xs-12">
+                                    <img src="img/contacts__logo__briz-c.png" alt="">
                                     <h2>ООО &laquo;БРИЗ-Центр&raquo;</h2>
                                 </div>
-                                <div class="content__contacts__item__descr col-md-8">
+                                <div class="content__contacts__item__descr col-md-8 col-sm-6 col-xs-12">
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Индекс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>663020</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Адрес</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
-                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок №2 «А», строение 3.</p>
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
+                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок &#8470;&nbsp;2&nbsp;&laquo;А&raquo;, строение&nbsp;3.</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Тел. / факс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>8 (391) 204 04 70<br>
                                             8 (391) 204 04 71</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Эл. почта</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>briz-centr@briz2001.ru</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Сайт</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>www.briz2001.ru<br>
                                             www.бриз-центр.рф</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content__contacts__item__map col-md-4">
-                                        <div class="blackcube">
-                                        </div>
+                                <div class="content__contacts__item__map col-md-4 col-sm-6 col-xs-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8907.02524984433!2d92.7769477422006!3d56.074828436838835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDA0JzI4LjQiTiA5MsKwNDYnNDMuNCJF!5e0!3m2!1sru!2s!4v1417083444400" width=100% height=240px frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
 
-                            <div class="content__contacts__item row col-md-12 col-sm-12 col-xs-12">
+                            <div class="content__contacts__item col-md-12 col-sm-12 col-xs-12">
                                 <div class="content__contacts__item__name col-md-12 col-sm-12 col-xs-12">
+                                    <img src="img/contacts__logo__kdz.png" alt="">
                                     <h2>ООО &laquo;КРАСДОРЗНАК&raquo;</h2>
                                 </div>
-                                <div class="content__contacts__item__descr col-md-8">
+                                <div class="content__contacts__item__descr col-md-8 col-sm-6 col-xs-12">
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Индекс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>662535</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Адрес</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
-                                            <p>Красноярский край, Берёзовский район, с. Вознесенка,ул. Ленина, 73А</p>
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
+                                            <p>Красноярский край, Берёзовский район, с. Вознесенка, ул. Ленина, 73А</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Тел. / факс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>8 (391) 204 03 40<br>
                                             8 (391) 204 03 20<br>
                                             8 (391) 295 13 96</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Эл. почта</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>kdz@krasdorznak.ru</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Сайт</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>www.briz2001.ru</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content__contacts__item__map col-md-4">
-                                        <div class="blackcube">
-                                        </div>
+                                <div class="content__contacts__item__map col-md-4 col-sm-6 col-xs-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17980.978274297904!2d93.23544592841333!3d55.71293703389093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQyJzQ2LjEiTiA5M8KwMTUnMDYuMCJF!5e0!3m2!1sru!2s!4v1417428753972" width=100% height=240px frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
 
-                            <div class="content__contacts__item row col-md-12 col-sm-12 col-xs-12">
+                            <div class="content__contacts__item col-md-12 col-sm-12 col-xs-12">
                                 <div class="content__contacts__item__name col-md-12 col-sm-12 col-xs-12">
+                                    <img src="img/contacts__logo__briz-z.png" alt="">
                                     <h2>ООО &laquo;БРИЗ-Запад&raquo;</h2>
                                 </div>
-                                <div class="content__contacts__item__descr col-md-8">
+                                <div class="content__contacts__item__descr col-md-8 col-sm-6 col-xs-12">
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Индекс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>658083</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Адрес</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
-                                            <p>Алтайский край, г. Новоалтайск, ул.Дорожная, 86а</p>
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
+                                            <p>Алтайский край, г. Новоалтайск, ул.&nbsp;Дорожная, 86а</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Тел. / факс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>8(385-32) 6 14 49<br>
                                             8(385-32) 6 14 78</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Эл. почта</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>west@briz2001.ru</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Сайт</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>www.briz2001.ru</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content__contacts__item__map col-md-4">
-                                        <div class="blackcube">
-                                        </div>
+                                <div class="content__contacts__item__map col-md-4 col-sm-6 col-xs-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.88066326727!2d83.98522911603581!3d53.38118467980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42ddadba882be867%3A0x3acf8bd945876876!2z0YPQuy4g0JTQvtGA0L7QttC90LDRjywgODYsINCd0L7QstC-0LDQu9GC0LDQudGB0LosINCQ0LvRgtCw0LnRgdC60LjQuSDQutGA0LDQuSwgNjU4MDYw!5e0!3m2!1sru!2sru!4v1474006971676" width=100% height=240px frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
 
-                            <div class="content__contacts__item row col-md-12 col-sm-12 col-xs-12">
+                            <div class="content__contacts__item col-md-12 col-sm-12 col-xs-12">
                                 <div class="content__contacts__item__name col-md-12 col-sm-12 col-xs-12">
+                                    <img src="img/contacts__logo__grand.png" alt="">
                                     <h2>ООО &laquo;ГРАНД&raquo;</h2>
                                 </div>
-                                <div class="content__contacts__item__descr col-md-8">
+                                <div class="content__contacts__item__descr col-md-8 col-sm-6 col-xs-12">
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Индекс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>663020</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Адрес</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
-                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок №2 «А», строение 3.</p>
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
+                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок &#8470;&nbsp;2&nbsp;&laquo;А&raquo;, строение&nbsp;3.</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Тел. / факс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>8 (391) 204 04 70<br>
                                             8 (391) 204 04 71</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Эл. почта</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>briz-centr@briz2001.ru</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Сайт</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>www.briz2001.ru</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content__contacts__item__map col-md-4">
-                                        <div class="blackcube">
-                                        </div>
+                                <div class="content__contacts__item__map col-md-4 col-sm-6 col-xs-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8907.02524984433!2d92.7769477422006!3d56.074828436838835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDA0JzI4LjQiTiA5MsKwNDYnNDMuNCJF!5e0!3m2!1sru!2s!4v1417083444400" width=100% height=240px frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
 
-                            <div class="content__contacts__item row col-md-12 col-sm-12 col-xs-12">
+                            <div class="content__contacts__item col-md-12 col-sm-12 col-xs-12">
                                 <div class="content__contacts__item__name col-md-12 col-sm-12 col-xs-12">
+                                    <img src="img/contacts__logo__itech.png" alt="">
                                     <h2>ООО &laquo;Айтехникс&raquo;</h2>
                                 </div>
-                                <div class="content__contacts__item__descr col-md-8">
+                                <div class="content__contacts__item__descr col-md-8 col-sm-6 col-xs-12">
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Индекс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>663020</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Адрес</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
-                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок №2 «А», строение 3.</p>
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
+                                            <p>Красноярский Край, Емельяновский район, муниципальное образование Солонцовский сельский совет, площадка Западная, участок &#8470;&nbsp;2&nbsp;&laquo;А&raquo;, строение&nbsp;3.</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Тел. / факс</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>8 (391) 204 04 70<br>
-                                            8 (391) 204 04 71</p>
-                                            <p>8 (953) 587 50 05</p>
+                                            8 (391) 204 04 71<br>
+                                            8 (953) 587 50 05</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Эл. почта</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>89535875005@mail.ru</p>
-                                            <p id="alldayhelp">КРУГЛОСУТОЧНАЯ ДИСПЕТЧЕРСКАЯ СЛУЖБА</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="content__contacts__item__descr__key">
+                                        <div class="content__contacts__item__descr__key col-xs-3">
                                             <p>Сайт</p>
                                         </div>
-                                        <div class="content__contacts__item__descr__value">
+                                        <div class="content__contacts__item__descr__value  col-xs-9">
                                             <p>www.briz2001.ru</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content__contacts__item__map col-md-4">
-                                        <div class="blackcube">
-                                        </div>
+                                <div class="content__contacts__item__map col-md-4 col-sm-6 col-xs-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8907.02524984433!2d92.7769477422006!3d56.074828436838835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDA0JzI4LjQiTiA5MsKwNDYnNDMuNCJF!5e0!3m2!1sru!2s!4v1417083444400" width=100% height=240px frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -434,8 +430,8 @@
             <div class="footer">
                 <div class="footer__menu">
                     <div class="container-fluid content-wrapper">
-                        <div class="row">
-                            <nav class="col-md-10">
+                        <div class="footer__menu__stable">
+                            <nav>
                                 <li><a href="#">Каталог</a></li>
                                 <li><a href="#">Комплексные решения</a></li>
                                 <li><a href="#">Группа компаний БРИЗ</a></li>
@@ -446,42 +442,43 @@
                 </div>
                 <div class="footer__copyright">
                     <div class="container-fluid content-wrapper">
-                        <div class="row hidden-xs hidden-sm">
-                            <div class="footer__copyright__bureauit col-md-5">
-                                Разработка сайта - <img src="img/footer__bureauit.png">
+                        <div class="hidden-xs">
+                            <div class="footer__copyright__bureauit col-md-5 col-sm-4">
+                                Разработка сайта &mdash; <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
                             </div>
-                            <div class="footer__copyright__contacts col-md-7">
-                                <div class="footer__copyright__contacts__fb col-md-4">
-                                    <img src="img/fb__icon.png" alt=""> facebook
+                            <div class="footer__copyright__contacts col-md-7 col-sm-8">
+                                <div class="footer__copyright__contacts__fb col-md-4 col-sm-4">
+                                    <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a>
                                 </div>
-                                <div class="footer__copyright__contacts__email col-md-8">
-                                    <p>8 800 555 35 35</p>
-                                    <p>gugr@yandex.ru</p>
+                                <div class="footer__copyright__contacts__email col-md-8 col-sm-8">
+                                    <p><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
+                                    <p><a href="mailto:briz@briz2001.ru">briz@briz2001.ru</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row hidden-xs hidden-sm">
+                        <div class="hidden-xs">
                             <div class="footer__copyright__briz col-md-6 col-md-offset-3">
                                 <p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</p>
                             </div>
                         </div>
-                        <div class="row hidden-md hidden-lg">
+                        <div class="hidden-sm hidden-md hidden-lg">
                             <div class="footer__copyright__contacts__email col-xs-5">
-                                <p>8 800 555 35 35</p>
+                                <p><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
                             </div>
-                            <div class="footer__copyright__contacts__email col-xs-5">
-                                <p>gugr@yandex.ru</p>
+                            <div class="footer__copyright__contacts__email col-xs-5" id="ftel">
+                                <p>briz@briz2001.ru</p>
                             </div>
                             <div class="footer__copyright__contacts__fb col-xs-2">
                                     <img src="img/fb__icon.png" alt="">
                             </div>
                         </div>
-                        <div class="row hidden-md hidden-lg">
+                        <div class="hidden-sm hidden-md hidden-lg">
                             <div class="footer__copyright__briz col-xs-8">
                                 <p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены<p>
                             </div>
                             <div class="footer__copyright__bureauit col-xs-4">
-                                Разработка &ndash; <img src="img/footer__bureauit.png">
+                                Разработка &mdash;<br>
+                                <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
                             </div>
                         </div>
                     </div>
@@ -491,10 +488,10 @@
     </div>
     <script>
         $(document.body).ready(function () {
-            $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close').click(function () {
+            $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close, .header__top__buttons').click(function () {
                 $('.header__menu__dropdown').slideToggle('slow', function () {
                     if ($(this).is(":visible")) {
-                        $('.header__menu__stable').css("opacity", "0.3");
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "0.3");
                     } else {
                         $('.header__menu__stable').css("opacity", "1");
                     }

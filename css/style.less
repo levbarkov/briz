@@ -12,8 +12,12 @@ textarea:focus {
 
 .content-wrapper {
     max-width: 1280px;
-    padding: 0px;
-    padding: 0 15px;
+    @media (max-width: 768px) {
+    	padding: 0 15px;
+    }
+    @media (min-width: 769px) {
+    	padding: 0 30px;
+    }
 }
 
 .breadcrumbs {
@@ -41,65 +45,74 @@ textarea:focus {
     }
 }
 
-@media all and (max-width: 768px) {
-    .header {
-        &__menu {
-            &__stable {
-                nav {
-                    padding: 0 !important;
-                    text-align: center;
-                    li {
-                        padding: 0 15px !important;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .header {
     &__top {
-    	@media (max-width: 768px) {
-				margin-left: 15px;	
-   				}
+    	&__logo {
+    		padding-left: 0;
+    	}
+    	&__info {
+    		padding-right: 0;
+    		&__fb {
+    		    img {
+    		        margin-top: -3px;
+    		        padding-right: 4px;
+    		    }
+    		    text-align: right;
+    		    p {
+    		        font-family: 'Roboto', sans-serif;
+    		        font-weight: 300;
+    		        font-size: 16px;
+    		        color: #004899;
+    		        display: inline-block;
+    		        line-height: 60px;
+    		        margin-bottom: 0px;
+    		    }
+    		    a:link {
+    		    	text-decoration: none;
+    		    }
+    		}
+    		&__contacts {
+    		    text-align: right;
+    		    padding-right: 0;
+    		    p {
+    		        font-family: 'Roboto', sans-serif;
+    		        font-weight: 300;
+    		        font-size: 16px;
+    		        color: #4c4c4c;
+    		        margin-bottom: 0px;
+    		        display: inline-block;
+    		    }
+    		    p:nth-child(2) {
+    		    	margin-left: 20px;
+    		    }
+    		    a:link {
+    		    	text-decoration: none;
+    		    	color: #4c4c4c;
+    		    }
+    		}
+    	}
         &__buttons {
             text-align: right;
+            padding-right: 0;
             img:nth-child(2) {
-                padding-right: 15px;
                 padding-left: 40px;
             }
+            @media (max-width: 480px) {
+            	text-align: right;
+            	img:nth-child(2) {
+                padding-left: 30px;
+            }
+            }
         }
-        .row {}
+        .row {
+        	@media (max-width: 480px) {
+        		width: 100vw;
+        	}
+        }
         line-height: 60px;
         height: 60px;
-        &__fb {
-            img {
-                margin-top: -3px;
-                padding-right: 3px;
-            }
-            text-align: right;
-            p {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                font-size: 16px;
-                color: #004899;
-                display: inline-block;
-                line-height: 60px;
-                margin-bottom: 0px;
-            }
-        }
-        &__contacts {
-            text-align: right;
-            p {
-                margin-left: 20px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                font-size: 16px;
-                color: #4c4c4c;
-                margin-bottom: 0px;
-                display: inline-block;
-            }
-        }
+
     }
     &__menu {
         font-family: 'Roboto', sans-serif;
@@ -110,16 +123,40 @@ textarea:focus {
         background-color: #004899;
         nav {
             min-height: 60px;
+            @media (max-width: 768px) {
+            	min-height: 40px;
+            }
             li {
                 cursor: pointer;
                 padding: 0 20px;
                 line-height: 60px;
+                @media (max-width: 802px) {
+                	padding: 0 10px;
+                }
+                @media (max-width: 768px) {
+                	padding: 0 5px;
+                	margin-right: 20px;
+                }
+                @media (max-width: 625px) {
+					padding: 0 20px;
+                }
+                @media (max-width: 480px) {
+        			padding: 0 0;
+        			margin-right: 10px;
+        			line-height: 10px;
+        		}
                 display: inline-block;
                 a {
                     line-height: 60px;
                     height: 60px;
                     width: 100%;
                     color: #ffffff;
+                    @media (max-width: 768px) {
+                    	line-height: 40px;
+                    }
+                    @media (max-width: 480px) {
+                    	line-height: 40px;
+                    }
                 }
                 a:hover {
                     text-decoration: none;
@@ -136,10 +173,19 @@ textarea:focus {
                 background-color: #003d82;
             }
         }
-        &__search {
+        &__stable {
+        	nav {
+        		padding-left: 0;
+        		padding-right: 0;
+        	}
         	@media (max-width: 768px) {
-				display: none;	
-   				}
+        		text-align: center;
+        	}
+        	@media (max-width: 480px) {
+        		text-align: center;
+        	}
+        }
+        &__search {
             line-height: 60px;
             height: 60px;
             text-align: right;
@@ -367,29 +413,39 @@ textarea:focus {
 		&__item {
 			padding-right: 0;
 			margin-bottom: 50px;
+			padding-left: 0;
 			&__name {
 				padding-left: 0;
+				padding-right: 0;
 				h2 {
 					font-weight: 300;
 					font-size: 25px;
 					margin-bottom: 40px;
+					margin-top: 30px;
 				}
 			}
 			&__descr {
 				display: inline-block;
 				padding-left: 0;
+				padding-right: 0;
 				&__key {
+					padding-left: 0;
 					display: inline-block;
-					width: 10%;
+					min-width: 25%;
 					vertical-align: top;
 					color: #ea6d62;
+					@media (max-width: 480px) {
+						width: 30vw;
+					}
 				}
 				&__value {
 					display: inline-block;
 					width: 70%;
+					padding-right: 0;
 					p {
 						display: inline-block;
 					}
+					/* making 24/7 tech support button */
 					#alldayhelp {
 						background-color: #004899;
 						color: white;
@@ -397,7 +453,9 @@ textarea:focus {
 						margin-left: 10px;
 						display: inline-block;
 						padding: 0 5px;
-
+					}
+					@media (max-width: 480px) {
+						width: 45vw;
 					}
 				}
 			}
@@ -406,10 +464,13 @@ textarea:focus {
 				padding-right: 0;
 				display: inline-block;
 				text-align: right;
+				@media (max-width: 768px) {
+					text-align: left;
+				}
 				.blackcube {
 				display: inline-block;
-				width: 300px;
-				height: 240px;
+				width: 100%;
+				height: 250px;
 				border: 1px solid black;
 				background-color: grey;
 				}
@@ -1169,33 +1230,137 @@ textarea:focus {
 			background-color: #e5e5e5;
 		}
 	}
-	&__organize-safe-drive {
-		padding-top: 80px;
-		height: 1055px;
-		background-color: white;
-		h1 {
-			font-family: 'Roboto', sans-serif;
-			font-weight: 300;
-			font-size: 42px;
-			color: black;
-		}
-	}
-	&__complex-solution {
-		padding-top: 60px;
-		height: 1925px;
-		background-color: #e5ecf5;
-		h1 {
-			font-family: 'Roboto', sans-serif;
-			font-weight: 300;
-			font-size: 42px;
-			color: black;
-		}
-	}
-	&__group-company-geo {
-		height: 1415px;
-		background-image: url(../img/main__map.png);
+	&__complex-main {
+		position: relative;
+		background-image: url(../img/main__complex__main.png);
 		background-repeat: no-repeat;
-		background-position: 50% 20%;
+		background-size: cover;
+		background-position: center;
+		height: calc(~"100vh - 120px");
+		color: #fff;
+		&__title {
+			h1 {
+				font-weight: 100;
+				font-size: 62px;
+				text-align: center;
+				line-height: 1.5;
+				text-transform: uppercase;
+				margin-top: 70px;
+				@media (max-width: 768px) {
+					margin-top: 50px;
+					font-size: 59px;
+				}
+			}
+		}
+		&__columns {
+			background-color: rgba(102, 102, 102, 0.3);
+			max-width: 100%; 
+			position: absolute;
+			bottom: 0;
+			padding-top: 30px;
+			&__item {
+				h3 {
+					display: inline;
+					font-size: 18px;
+					font-weight: 700;
+					border-bottom: 1px dotted #fff;
+				}
+				p {
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+			@media (max-width: 768px) {
+				padding-left: 0;
+			}
+		}
+	}
+	&__safe-drive {
+		position: relative;
+		background-image: url(../img/main__safe-drive.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		&__title {
+			position: absolute;
+			top: 40px;
+			h1 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 42px;
+			color: black;
+			}
+			@media (max-width: 768px) {
+				padding-left: 0;
+			}
+		}
+
+		/*
+		for a interactive picture:
+		padding-top: 65px;
+		&__image {
+			padding-left: 50px;
+			position: relative;
+			img {
+				width: 100%;
+			}
+			&__item {
+				position: absolute;
+				background-color: #fff;
+				width: 260px;
+				padding: 20px;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+				h3 {
+					font-size: 18px;
+					font-weight: 700;
+				}
+				a:link {
+					text-decoration: none;
+					color: rgba(0, 72, 153, 1);
+					border-bottom: 1px solid;
+					border-bottom-color: rgba(175, 201, 224, 0.3);
+				}
+				p {
+					color: #666;
+				}
+			}
+			#marking {
+				top: 10%;
+				left: 17%;
+			}
+			#metalcon {
+				top: 10%;
+				right: 3%;
+			}
+			#roadsigns {
+				top: 25%;
+				left: 40%;
+			}
+			#organize {
+				top: 53%;
+				left: 25%;
+			}
+			#mastic {
+				bottom: 7%;
+				right: 15%;
+			}
+		}
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 42px;
+			color: black;
+		}
+		*/
+	}
+	
+	&__group-company-geo {
+		background-image: url(../img/main__group__pattern.png);
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		h1 {
@@ -1206,33 +1371,94 @@ textarea:focus {
 		}
 		h4 {
 			font-size: 18px;
+			font-weight: 300;
 		}
 		p {
 			font-size: 14px;
 			color: #808080;
 		}
-		li {
-			margin: 10px 0px;
+		
+		&__main {
+			p:nth-child(2) {
+				font-size: 18px;
+			}
 		}
-		&-offices {
+		&__map {
+			padding-bottom: 70px;
+			ol {
+				padding-left: 20px;
+			}
+			li {
+				margin: 10px 0px;
+			}
+			img {
+				float: right;
+				@media (max-width: 768px) {
+					position: center;
+				}
+			}
+		}
+		&__offices {
+			padding-left: 0;
+			padding-right: 0;
 			h2 {
 				color: #004899;
 				font-family: 'Roboto', sans-serif;
 				font-weight: 700;
 				font-size: 18px; 
 			}
+			a:link {
+				text-decoration: none;
+				color: rgba(0, 72, 157, 1);
+				border-bottom: 1px solid;
+				border-bottom-color: rgba(175, 201, 224, 0.3);
+			}
+			&-row {
+				&__item {
+					margin-top: 35px;
+					height: 400px;
+				}
+			}
 		}
 	}
-	&__news-row {
-		height: 330px;
+	&__main-news {
 		background-color: #cedbec;
-		h1 {
-			font-family: 'Roboto', sans-serif;
-			font-size: 42px;
-			color: black;
-			font-weight: 300;
+		&__title {
+			h2 {
+				font-family: 'Roboto', sans-serif;
+				font-size: 25px;
+				font-weight: 300;
+			}
+		}
+		&__feed {
+			&__item {
+				display: inline-block;
+				padding-bottom: 20px;
+				padding-left: 0;
+				height: 400px;
+				h3 {
+					margin-top: 15px;
+					font-size: 18px;
+					font-weight: 700;
+				}
+				p {
+					font-size: 14px;
+					font-weight: 300;
+					color: #666;
+				}
+				time {
+					font-size: 11px;
+					font-weight: 400;
+					color: #666;
+				}
+				img {
+					margin-top: 15px;
+					width: 100%;
+				}
+			}
 		}
 	}
+
     &__single-shop {
         &__menu {
             nav {
@@ -1730,12 +1956,6 @@ textarea:focus {
 	padding: 20px;
 	float: left;
 	margin-right: 20px;
-	@media (max-width: 991px) {
-				width: 45%;	
-   				}
-   	@media (max-width: 640px) {
-				width: 90%;	
-   				}
 }
 
 footer {
@@ -1745,12 +1965,6 @@ footer {
         margin: 30px 0px;
         height: 60px;
         &__menu {
-        	@media (max-width: 768px) {
-				margin-left: 15px;	
-   				}
-   			@media (min-width: 769px) {
-				padding-left: 15px;
-   				}
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             font-size: 13px;
@@ -1759,85 +1973,111 @@ footer {
                 margin-right: 40px;
                 line-height: 60px;
                 display: inline-block;
+                @media (max-width: 665px) {
+                	margin-right: 20px;
+                }
+                @media (max-width: 585px) {
+                	margin-right: 60px;
+                }
                 a {
                     color: #004899;
                 }
             }
+            @media (max-width: 768px) {
+            	display: none;
+            }
+            &__stable {
+            	nav {
+            		padding-left: 0;
+            	}
+            }
         }
         &__copyright {
-        	@media (max-width: 768px) {
-				margin-left: 15px;
-				line-height: 20px;	
-   				}
         	line-height: 60px;
             &__briz {
-            	@media (min-width: 769px) {
-					padding-left: 30px;
-   				}
-   				@media (min-width: 992px) {
-					text-align: center;
-   				}
             	text-align: left;
+            	padding-left: 0;
+            	padding-right: 0;
             	p {
             		font-family: 'Roboto', sans-serif;
             		font-weight: 300;
             		font-size: 12px;
             		color: #4c4c4c;
+            		text-align: center;
+            		@media (max-width: 768px) {
+            			text-align: left;
+            		}
+            		@media (max-width: 578px) {
+                		line-height: 20px;
+                		width: 200px;
+                	}
             	}
+            	@media (max-width: 768px) {
+            		line-height: 20px;
+            		padding: 15px 0;
+            	}
+                @media (max-width: 480px) {
+                    margin-right: 0;
+                    padding-right: 0;
+                }
         	}
             &__bureauit {
-            	@media (max-width: 768px) {
-					line-height: 20px;
-					text-align: right;	
-   				}
-   				@media (min-width: 768px) {
-
-					text-align: right;	
-   				}
-   				@media (min-width: 992px) {
-
-					text-align: left;	
-   				}
             	line-height: 60px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
                 font-size: 16px;
                 color: #4c4c4c;
                 text-align: left;
+                padding-right: 0;
+                padding-left: 0;
+
+                @media (max-width: 768px) {
+                	text-align: right;
+                	font-size: 12px;
+                	line-height: 20px;
+                	padding: 15px 0;
+                }
+                @media (max-width: 578px) {
+                	line-height: 20px;
+                	text-align: right;
+                }
             }
             &__contacts {
                 text-align: right;
+                padding-right: 0;
+
                 &__fb {
                     img {
                         margin-top: -3px;
-                        padding-right: 3px;
+                        padding-right: 4px;
                     }
                     text-align: right;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 300;
                     font-size: 16px;
-                    color: #004899;
                     display: inline-block;
                     line-height: 60px;
                     margin-bottom: 0px;
+                    padding-right: 0;
+                    a:link {
+                	text-decoration: none;
+                    color: #004899;
+                	}
+                    @media (max-width: 480px) {
+                    	text-align: right;
+                    	padding-left: 0;
+                    }
                 }
                 &__email {
-                	@media (max-width: 768px) {
-						text-align: left;	
-   						}
-   					@media (min-width: 769px) {
-						text-align: left;
-						padding-left: 30px;
-   						}
-   					@media (min-width: 992px) {
-						text-align: right;
-						padding-left: 30px;
-   						}
                     line-height: 60px;
                     text-align: right;
                     padding-right: 0;
+                    padding-left: 0;
+                    a:link {
+                	text-decoration: none;
+                    color: #4c4c4c;
+                	}
                     p {
-                        margin-right: 20px;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 300;
                         font-size: 16px;
@@ -1845,8 +2085,29 @@ footer {
                         margin-bottom: 0px;
                         display: inline-block;
                     }
+                    p:nth-child(1) {
+                    	margin-right: 20px;
+                    }
+                    @media (max-width: 768px) {
+                    	text-align: left;
+                    }
+                    @media (max-width: 480px) {
+                    	p {
+                    		margin-right: 0;
+                    	}
+                    }
                 }
             }
+            #ftel {
+            	@media (max-width: 480px) {
+                    padding-left: 10px;
+                }
+			}
+			.row {
+				@media (max-width: 480px) {
+					width: 100vw;
+				}
+			}
         }
     }
 }
