@@ -2016,6 +2016,14 @@ footer .footer__copyright__bureauit {
     text-align: right;
   }
 }
+footer .footer__copyright #f-mob-crb {
+  position: relative;
+}
+footer .footer__copyright #f-mob-crb div {
+  text-align: left;
+  position: absolute;
+  right: 0;
+}
 footer .footer__copyright__contacts {
   text-align: right;
   padding-right: 0;
