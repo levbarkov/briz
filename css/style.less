@@ -456,6 +456,7 @@ textarea:focus {
 					display: inline-block;
 					width: 70%;
 					padding-right: 0;
+					padding-left: 0;
 					a:link {
 						text-decoration: none;
 						color: #000;
@@ -1259,9 +1260,13 @@ textarea:focus {
 		padding-top: 50px;
 		@media (max-width: 768px) {
 			padding-top: 25px;
+			height: auto;
 		}
 		@media (max-width: 589px) {
 			padding-top: 0;
+		}
+		@media (max-width: 479px) {
+			height: auto;
 		}
 		&__title {
 			padding: 0;
@@ -1276,6 +1281,10 @@ textarea:focus {
 				@media (max-width: 768px) {
 					margin-top: 25px;
 					font-size: 50px;
+				}
+				@media (max-width: 480px) {
+					margin-top: 25px;
+					font-size: 32px;
 				}
 			}
 		}
@@ -1307,13 +1316,16 @@ textarea:focus {
 					margin-top: 10px;	
 					font-size: 14px;
 					font-weight: 400;
-					line-height: 1.11;
 					}
 					@media (max-width: 768px) {
 						padding-left: 0;
 						padding-right: 0;
 					}
 				}
+			}
+			@media (max-width: 768px) {
+				position: relative;
+				padding-bottom: 15px;
 			}
 		}
 	}
@@ -1324,6 +1336,9 @@ textarea:focus {
 			font-weight: 300;
 			font-size: 42px;
 			color: black;
+			@media (max-width: 480px) {
+				font-size: 32px;
+			}
 			}
 		}
 		&__text {
@@ -1401,6 +1416,9 @@ textarea:focus {
 			font-weight: 300;
 			font-size: 42px;
 			color: black;
+			@media (max-width: 480px) {
+				font-size: 32px;
+			}
 		}
 		h2 {
 			font-size: 25px;
@@ -1457,6 +1475,7 @@ textarea:focus {
 				margin-top: 35px;
 				height: 400px;
 				padding-left: 0;
+				padding-right: 45px;
 				img {
 					max-width: 80%;
 				}
@@ -1505,6 +1524,12 @@ textarea:focus {
 					margin-top: 15px;
 					max-width: 80%;
 				}
+				@media (max-width: 480px) {
+					height: 550px;
+				}
+			}
+			div:nth-last-of-type(1) {
+				padding-right: 0;
 			}
 		}
 	}
