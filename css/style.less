@@ -21,8 +21,11 @@ textarea:focus {
 }
 
 .breadcrumbs {
-    height: 50px;
+    height: 51px;
     background-color: #e5ecf5;
+    #brc-home {
+    	padding-bottom: 4px;
+    }
     li {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -48,6 +51,8 @@ textarea:focus {
 
 .header {
     &__top {
+    	line-height: 55px;
+    	height: 60px;
     	&__logo {
     		padding-left: 0;
     	}
@@ -110,9 +115,6 @@ textarea:focus {
         		width: 100vw;
         	}
         }
-        line-height: 60px;
-        height: 60px;
-
     }
     &__menu {
         font-family: 'Roboto', sans-serif;
@@ -193,6 +195,9 @@ textarea:focus {
         }
         &__hamburger {
             padding-left: 0 !important;
+            img {
+            	padding-bottom: 1px;
+            }
         }
         &__hamburger:hover {
             background-color: inherit !important;
@@ -405,29 +410,38 @@ textarea:focus {
 		}
 	}
 	&__contacts {
+		line-height: 1.786;
 		h1 {
 			font-size: 42px;
 			font-weight: 300;
-			margin: 40px 0; 
+			margin: 32px 0; 
+			line-height: 1.19;
 		}
 		&__item {
 			padding-right: 0;
-			margin-bottom: 50px;
+			margin-bottom: 60px;
 			padding-left: 0;
 			&__name {
 				padding-left: 0;
 				padding-right: 0;
+				img {
+					margin-top: 3px;
+				}
 				h2 {
 					font-weight: 300;
 					font-size: 25px;
-					margin-bottom: 40px;
-					margin-top: 30px;
+					margin-bottom: 33px;
+					margin-top: 25px;
+					line-height: 1.28;
 				}
 			}
 			&__descr {
 				display: inline-block;
 				padding-left: 0;
 				padding-right: 0;
+				div {
+					padding-bottom: 10px;
+				}
 				&__key {
 					padding-left: 0;
 					display: inline-block;
@@ -442,8 +456,9 @@ textarea:focus {
 					display: inline-block;
 					width: 70%;
 					padding-right: 0;
-					p {
-						display: inline-block;
+					a:link {
+						text-decoration: none;
+						color: #000;
 					}
 					/* making 24/7 tech support button */
 					#alldayhelp {
@@ -466,6 +481,10 @@ textarea:focus {
 				text-align: right;
 				@media (max-width: 768px) {
 					text-align: left;
+					margin-top: 10px;
+				}
+				iframe {
+					margin-top: 4px;
 				}
 				.blackcube {
 				display: inline-block;
@@ -1230,69 +1249,86 @@ textarea:focus {
 			background-color: #e5e5e5;
 		}
 	}
-	&__complex-main {
+	&__main-slide {
 		position: relative;
-		background-image: url(../img/main__complex__main.png);
+		background-image: url(../img/main__main-slide.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		height: calc(~"100vh - 120px");
-		color: #fff;
+		padding-top: 50px;
+		@media (max-width: 768px) {
+			padding-top: 25px;
+		}
+		@media (max-width: 589px) {
+			padding-top: 0;
+		}
 		&__title {
+			padding: 0;
 			h1 {
 				font-weight: 100;
 				font-size: 62px;
 				text-align: center;
-				line-height: 1.5;
+				line-height: 1.29;
 				text-transform: uppercase;
-				margin-top: 70px;
+				margin-top: 65px;
+				color: #fff;
 				@media (max-width: 768px) {
-					margin-top: 50px;
-					font-size: 59px;
+					margin-top: 25px;
+					font-size: 50px;
 				}
 			}
 		}
 		&__columns {
-			background-color: rgba(102, 102, 102, 0.3);
-			max-width: 100%; 
 			position: absolute;
 			bottom: 0;
-			padding-top: 30px;
-			&__item {
-				h3 {
+			left: 0;
+			right: 0;
+			background-color: rgba(102, 102, 102, 0.3);
+			padding: 0;
+			color: #fff;
+			padding-bottom: 35px;
+			padding-top: 33px;
+			&__text {
+				div:nth-of-type(1) {
+					padding-left: 0;
+				}
+				div:nth-last-of-type(1) {
+					padding-right: 0;
+				}
+				&__item {
+					h3 {
 					display: inline;
 					font-size: 18px;
 					font-weight: 700;
 					border-bottom: 1px dotted #fff;
-				}
-				p {
+					}
+					p {
+					margin-top: 10px;	
 					font-size: 14px;
 					font-weight: 400;
+					line-height: 1.11;
+					}
+					@media (max-width: 768px) {
+						padding-left: 0;
+						padding-right: 0;
+					}
 				}
-			}
-			@media (max-width: 768px) {
-				padding-left: 0;
 			}
 		}
 	}
 	&__safe-drive {
-		position: relative;
-		background-image: url(../img/main__safe-drive.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		height: 100vh;
 		&__title {
-			position: absolute;
-			top: 40px;
 			h1 {
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
 			font-size: 42px;
 			color: black;
 			}
-			@media (max-width: 768px) {
-				padding-left: 0;
+		}
+		&__text {
+			img {
+				width: 100%;
 			}
 		}
 
@@ -1356,9 +1392,6 @@ textarea:focus {
 	}
 	
 	&__group-company-geo {
-		background-image: url(../img/main__group__pattern.png);
-		background-repeat: no-repeat;
-		background-position: 100% 100%;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		font-family: 'Roboto', sans-serif;
@@ -1368,6 +1401,10 @@ textarea:focus {
 			font-weight: 300;
 			font-size: 42px;
 			color: black;
+		}
+		h2 {
+			font-size: 25px;
+			font-weight: 300;
 		}
 		h4 {
 			font-size: 18px;
@@ -1384,23 +1421,26 @@ textarea:focus {
 			}
 		}
 		&__map {
-			padding-bottom: 70px;
 			ol {
-				padding-left: 20px;
+				padding-left: 0px;
+				list-style-position: inside;
+				@media (max-width: 991px) {
+					column-count: 2;
+				}
 			}
 			li {
 				margin: 10px 0px;
 			}
 			img {
 				float: right;
-				@media (max-width: 768px) {
-					position: center;
+				max-width: 80%;
+				@media(max-width: 991px) {
+					float: none;
+					margin-bottom: 30px;
 				}
 			}
 		}
 		&__offices {
-			padding-left: 0;
-			padding-right: 0;
 			h2 {
 				color: #004899;
 				font-family: 'Roboto', sans-serif;
@@ -1413,10 +1453,20 @@ textarea:focus {
 				border-bottom: 1px solid;
 				border-bottom-color: rgba(175, 201, 224, 0.3);
 			}
-			&-row {
-				&__item {
-					margin-top: 35px;
-					height: 400px;
+			&__item {
+				margin-top: 35px;
+				height: 400px;
+				padding-left: 0;
+				img {
+					max-width: 80%;
+				}
+				@media screen and (max-width: 480px) {
+					height: 100vh;
+				}
+			}
+			@media (max-width: 767px) {
+				#office-null {
+					display: none;
 				}
 			}
 		}
@@ -1433,7 +1483,7 @@ textarea:focus {
 		&__feed {
 			&__item {
 				display: inline-block;
-				padding-bottom: 20px;
+				margin-bottom: 20px;
 				padding-left: 0;
 				height: 400px;
 				h3 {
@@ -1453,7 +1503,7 @@ textarea:focus {
 				}
 				img {
 					margin-top: 15px;
-					width: 100%;
+					max-width: 80%;
 				}
 			}
 		}
@@ -1963,6 +2013,7 @@ footer {
         border-bottom: 1px solid #e5ecf5;
         border-top: 1px solid #e5ecf5;
         margin: 30px 0px;
+        margin-bottom: 1px;
         height: 60px;
         &__menu {
             font-family: 'Roboto', sans-serif;
@@ -1993,26 +2044,27 @@ footer {
             }
         }
         &__copyright {
-        	line-height: 60px;
+        	line-height: 50px;
             &__briz {
-            	text-align: left;
+            	text-align: center;
             	padding-left: 0;
             	padding-right: 0;
+            	line-height: 22px;
             	p {
             		font-family: 'Roboto', sans-serif;
             		font-weight: 300;
             		font-size: 12px;
             		color: #4c4c4c;
             		text-align: center;
-            		@media (max-width: 768px) {
+            		@media (max-width: 767px) {
             			text-align: left;
+            			width: 200px;
             		}
             		@media (max-width: 578px) {
                 		line-height: 20px;
-                		width: 200px;
                 	}
             	}
-            	@media (max-width: 768px) {
+            	@media (max-width: 767px) {
             		line-height: 20px;
             		padding: 15px 0;
             	}
@@ -2022,7 +2074,7 @@ footer {
                 }
         	}
             &__bureauit {
-            	line-height: 60px;
+            	line-height: 64px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
                 font-size: 16px;
@@ -2032,8 +2084,7 @@ footer {
                 padding-left: 0;
 
                 @media (max-width: 768px) {
-                	text-align: right;
-                	font-size: 12px;
+                	text-align: left;
                 	line-height: 20px;
                 	padding: 15px 0;
                 }
@@ -2043,11 +2094,13 @@ footer {
                 }
             }
             #f-mob-crb {
-            	position: relative;
             	div {
             		text-align: left;
             		position: absolute;
             		right: 0;
+            	}
+            	@media (max-width: 768px) {
+            		font-size: 12px;
             	}
             }
             &__contacts {
@@ -2057,14 +2110,13 @@ footer {
                 &__fb {
                     img {
                         margin-top: -3px;
-                        padding-right: 4px;
                     }
                     text-align: right;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 300;
                     font-size: 16px;
                     display: inline-block;
-                    line-height: 60px;
+                    line-height: 64px;
                     margin-bottom: 0px;
                     padding-right: 0;
                     a:link {
@@ -2077,7 +2129,7 @@ footer {
                     }
                 }
                 &__email {
-                    line-height: 60px;
+                    line-height: 64px;
                     text-align: right;
                     padding-right: 0;
                     padding-left: 0;
@@ -2096,7 +2148,7 @@ footer {
                     p:nth-child(1) {
                     	margin-right: 20px;
                     }
-                    @media (max-width: 768px) {
+                    @media (max-width: 767px) {
                     	text-align: left;
                     }
                     @media (max-width: 480px) {

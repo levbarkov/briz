@@ -22,8 +22,11 @@ textarea:focus {
   }
 }
 .breadcrumbs {
-  height: 50px;
+  height: 51px;
   background-color: #e5ecf5;
+}
+.breadcrumbs #brc-home {
+  padding-bottom: 4px;
 }
 .breadcrumbs li {
   font-family: 'Roboto', sans-serif;
@@ -46,7 +49,7 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 .header__top {
-  line-height: 60px;
+  line-height: 55px;
   height: 60px;
 }
 .header__top__logo {
@@ -209,6 +212,9 @@ textarea:focus {
 }
 .header__menu__hamburger {
   padding-left: 0 !important;
+}
+.header__menu__hamburger img {
+  padding-bottom: 1px;
 }
 .header__menu__hamburger:hover {
   background-color: inherit !important;
@@ -403,30 +409,41 @@ textarea:focus {
   text-decoration: none;
   background-color: #f6f8fc;
 }
+.content__contacts {
+  line-height: 1.786;
+}
 .content__contacts h1 {
   font-size: 42px;
   font-weight: 300;
-  margin: 40px 0;
+  margin: 32px 0;
+  line-height: 1.19;
 }
 .content__contacts__item {
   padding-right: 0;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   padding-left: 0;
 }
 .content__contacts__item__name {
   padding-left: 0;
   padding-right: 0;
 }
+.content__contacts__item__name img {
+  margin-top: 3px;
+}
 .content__contacts__item__name h2 {
   font-weight: 300;
   font-size: 25px;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 33px;
+  margin-top: 25px;
+  line-height: 1.28;
 }
 .content__contacts__item__descr {
   display: inline-block;
   padding-left: 0;
   padding-right: 0;
+}
+.content__contacts__item__descr div {
+  padding-bottom: 10px;
 }
 .content__contacts__item__descr__key {
   padding-left: 0;
@@ -446,8 +463,9 @@ textarea:focus {
   padding-right: 0;
   /* making 24/7 tech support button */
 }
-.content__contacts__item__descr__value p {
-  display: inline-block;
+.content__contacts__item__descr__value a:link {
+  text-decoration: none;
+  color: #000;
 }
 .content__contacts__item__descr__value #alldayhelp {
   background-color: #004899;
@@ -471,7 +489,11 @@ textarea:focus {
 @media (max-width: 768px) {
   .content__contacts__item__map {
     text-align: left;
+    margin-top: 10px;
   }
+}
+.content__contacts__item__map iframe {
+  margin-top: 4px;
 }
 .content__contacts__item__map .blackcube {
   display: inline-block;
@@ -1211,58 +1233,79 @@ textarea:focus {
   height: 140px;
   background-color: #e5e5e5;
 }
-.content__complex-main {
+.content__main-slide {
   position: relative;
-  background-image: url(../img/main__complex__main.png);
+  background-image: url(../img/main__main-slide.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: calc(100vh - 120px);
-  color: #fff;
+  padding-top: 50px;
 }
-.content__complex-main__title h1 {
+@media (max-width: 768px) {
+  .content__main-slide {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 589px) {
+  .content__main-slide {
+    padding-top: 0;
+  }
+}
+.content__main-slide__title {
+  padding: 0;
+}
+.content__main-slide__title h1 {
   font-weight: 100;
   font-size: 62px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.29;
   text-transform: uppercase;
-  margin-top: 70px;
+  margin-top: 65px;
+  color: #fff;
 }
 @media (max-width: 768px) {
-  .content__complex-main__title h1 {
-    margin-top: 50px;
-    font-size: 59px;
+  .content__main-slide__title h1 {
+    margin-top: 25px;
+    font-size: 50px;
   }
 }
-.content__complex-main__columns {
-  background-color: rgba(102, 102, 102, 0.3);
-  max-width: 100%;
+.content__main-slide__columns {
   position: absolute;
   bottom: 0;
-  padding-top: 30px;
+  left: 0;
+  right: 0;
+  background-color: rgba(102, 102, 102, 0.3);
+  padding: 0;
+  color: #fff;
+  padding-bottom: 35px;
+  padding-top: 33px;
 }
-.content__complex-main__columns__item h3 {
+.content__main-slide__columns__text div:nth-of-type(1) {
+  padding-left: 0;
+}
+.content__main-slide__columns__text div:nth-last-of-type(1) {
+  padding-right: 0;
+}
+.content__main-slide__columns__text__item h3 {
   display: inline;
   font-size: 18px;
   font-weight: 700;
   border-bottom: 1px dotted #fff;
 }
-.content__complex-main__columns__item p {
+.content__main-slide__columns__text__item p {
+  margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.11;
 }
 @media (max-width: 768px) {
-  .content__complex-main__columns {
+  .content__main-slide__columns__text__item {
     padding-left: 0;
+    padding-right: 0;
   }
 }
 .content__safe-drive {
-  position: relative;
-  background-image: url(../img/main__safe-drive.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
   /*
 		for a interactive picture:
 		padding-top: 65px;
@@ -1321,25 +1364,16 @@ textarea:focus {
 		}
 		*/
 }
-.content__safe-drive__title {
-  position: absolute;
-  top: 40px;
-}
 .content__safe-drive__title h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 42px;
   color: black;
 }
-@media (max-width: 768px) {
-  .content__safe-drive__title {
-    padding-left: 0;
-  }
+.content__safe-drive__text img {
+  width: 100%;
 }
 .content__group-company-geo {
-  background-image: url(../img/main__group__pattern.png);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Roboto', sans-serif;
@@ -1350,6 +1384,10 @@ textarea:focus {
   font-weight: 300;
   font-size: 42px;
   color: black;
+}
+.content__group-company-geo h2 {
+  font-size: 25px;
+  font-weight: 300;
 }
 .content__group-company-geo h4 {
   font-size: 18px;
@@ -1362,26 +1400,27 @@ textarea:focus {
 .content__group-company-geo__main p:nth-child(2) {
   font-size: 18px;
 }
-.content__group-company-geo__map {
-  padding-bottom: 70px;
-}
 .content__group-company-geo__map ol {
-  padding-left: 20px;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+@media (max-width: 991px) {
+  .content__group-company-geo__map ol {
+    column-count: 2;
+  }
 }
 .content__group-company-geo__map li {
   margin: 10px 0px;
 }
 .content__group-company-geo__map img {
   float: right;
+  max-width: 80%;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .content__group-company-geo__map img {
-    position: center;
+    float: none;
+    margin-bottom: 30px;
   }
-}
-.content__group-company-geo__offices {
-  padding-left: 0;
-  padding-right: 0;
 }
 .content__group-company-geo__offices h2 {
   color: #004899;
@@ -1395,9 +1434,23 @@ textarea:focus {
   border-bottom: 1px solid;
   border-bottom-color: rgba(175, 201, 224, 0.3);
 }
-.content__group-company-geo__offices-row__item {
+.content__group-company-geo__offices__item {
   margin-top: 35px;
   height: 400px;
+  padding-left: 0;
+}
+.content__group-company-geo__offices__item img {
+  max-width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .content__group-company-geo__offices__item {
+    height: 100vh;
+  }
+}
+@media (max-width: 767px) {
+  .content__group-company-geo__offices #office-null {
+    display: none;
+  }
 }
 .content__main-news {
   background-color: #cedbec;
@@ -1409,7 +1462,7 @@ textarea:focus {
 }
 .content__main-news__feed__item {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   padding-left: 0;
   height: 400px;
 }
@@ -1430,7 +1483,7 @@ textarea:focus {
 }
 .content__main-news__feed__item img {
   margin-top: 15px;
-  width: 100%;
+  max-width: 80%;
 }
 .content__single-shop__menu nav {
   max-width: 220px;
@@ -1920,6 +1973,7 @@ footer .footer {
   border-bottom: 1px solid #e5ecf5;
   border-top: 1px solid #e5ecf5;
   margin: 30px 0px;
+  margin-bottom: 1px;
   height: 60px;
 }
 footer .footer__menu {
@@ -1955,12 +2009,13 @@ footer .footer__menu__stable nav {
   padding-left: 0;
 }
 footer .footer__copyright {
-  line-height: 60px;
+  line-height: 50px;
 }
 footer .footer__copyright__briz {
-  text-align: left;
+  text-align: center;
   padding-left: 0;
   padding-right: 0;
+  line-height: 22px;
 }
 footer .footer__copyright__briz p {
   font-family: 'Roboto', sans-serif;
@@ -1969,18 +2024,18 @@ footer .footer__copyright__briz p {
   color: #4c4c4c;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .footer__copyright__briz p {
     text-align: left;
+    width: 200px;
   }
 }
 @media (max-width: 578px) {
   footer .footer__copyright__briz p {
     line-height: 20px;
-    width: 200px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .footer__copyright__briz {
     line-height: 20px;
     padding: 15px 0;
@@ -1993,7 +2048,7 @@ footer .footer__copyright__briz p {
   }
 }
 footer .footer__copyright__bureauit {
-  line-height: 60px;
+  line-height: 64px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -2004,8 +2059,7 @@ footer .footer__copyright__bureauit {
 }
 @media (max-width: 768px) {
   footer .footer__copyright__bureauit {
-    text-align: right;
-    font-size: 12px;
+    text-align: left;
     line-height: 20px;
     padding: 15px 0;
   }
@@ -2016,13 +2070,15 @@ footer .footer__copyright__bureauit {
     text-align: right;
   }
 }
-footer .footer__copyright #f-mob-crb {
-  position: relative;
-}
 footer .footer__copyright #f-mob-crb div {
   text-align: left;
   position: absolute;
   right: 0;
+}
+@media (max-width: 768px) {
+  footer .footer__copyright #f-mob-crb {
+    font-size: 12px;
+  }
 }
 footer .footer__copyright__contacts {
   text-align: right;
@@ -2034,13 +2090,12 @@ footer .footer__copyright__contacts__fb {
   font-weight: 300;
   font-size: 16px;
   display: inline-block;
-  line-height: 60px;
+  line-height: 64px;
   margin-bottom: 0px;
   padding-right: 0;
 }
 footer .footer__copyright__contacts__fb img {
   margin-top: -3px;
-  padding-right: 4px;
 }
 footer .footer__copyright__contacts__fb a:link {
   text-decoration: none;
@@ -2053,7 +2108,7 @@ footer .footer__copyright__contacts__fb a:link {
   }
 }
 footer .footer__copyright__contacts__email {
-  line-height: 60px;
+  line-height: 64px;
   text-align: right;
   padding-right: 0;
   padding-left: 0;
@@ -2073,7 +2128,7 @@ footer .footer__copyright__contacts__email p {
 footer .footer__copyright__contacts__email p:nth-child(1) {
   margin-right: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .footer__copyright__contacts__email {
     text-align: left;
   }
