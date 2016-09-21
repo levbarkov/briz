@@ -7,11 +7,19 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Главная</title>
 </head>
@@ -23,15 +31,15 @@
                 <div class="header__top">
                     <div class="container-fluid content-wrapper">
                         <div class="header__top__logo col-md-6 col-xs-6 col-sm-3">
-                            <img src="img/header__logo.png" alt="">
+                            <a href="#"><img src="img/header__logo.png" alt=""></a>
                         </div>
                         <div class="header__top__info col-md-6 col-xs-9 col-sm-9 hidden-xs">
                             <div class="header__top__info__fb col-md-4 col-xs-4">
                                 <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a>
                             </div>
                             <div class="header__top__info__contacts col-md-8 col-xs-8 hidden-xs">
-                                <p class="header__top__info__contacts__number"><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
-                                <p class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru">briz@briz2001.ru</a>
+                                <p class="header__top__info__contacts__number"><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                                <p class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
                             </div>
                         </div>
                         <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
@@ -51,7 +59,7 @@
                                 <li id="nav-contacts"><a href="#">Контакты</a></li>
                             </nav>
                             <div class="header__menu__search col-md-2 col-sm-1 hidden-xs">
-                                <img src="img/search__icon.png" alt="">
+                                <a href="#"><img src="img/search__icon.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -151,15 +159,15 @@
                         <div class="content__main-slide__columns">
                             <div class="content__main-slide__columns__text container-fluid content-wrapper">
                                 <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
-                                    <h3>Благоустройство</h3>
+                                    <h3><a href="#">Благоустройство</a></h3>
                                     <p>Мобильные светофоры применяются в местах ведения ремонтных работ для организации реверсивного движения. Надежная складная стойка мобильного светофора поз</p>
                                 </div>
                                 <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
-                                    <h3>Комплексные решения</h3>
+                                    <h3><a href="#">Комплексные решения</a></h3>
                                     <p>Мобильные светофоры применяются в местах ведения ремонтных работ для организации реверсивного движения.</p>
                                 </div>
                                 <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
-                                    <h3>Группа компаний &laquo;Бриз&raquo;</h3>
+                                    <h3><a href="#">Группа компаний &laquo;Бриз&raquo;</a></h3>
                                     <p>Компания осуществляет нанесение дорожной разметки всех видов современной техникой. Все машины компании оборудованы инновационной системой обратной связи, которая позволяет оперативно контролировать работы.</p>
                                 </div>
                             </div>
@@ -171,7 +179,7 @@
                             <h1>Организуем безопасное дорожное движение и удобные парковки</h1>
                         </div>
                         <div class="content__safe-drive__text container-fluid">
-                            <img src="img/main__safe-drive0.png" id="safe-drive-imgtext">
+                            <a class="fancybox" href="img/main__safe-drive0.png"><img src="img/main__safe-drive0.png" alt="" id="safe-drive-imgtext"></a>
                         </div>
                     </div>
 
@@ -184,41 +192,45 @@
                         </div>
 
                         <div class="content__group-company-geo__offices container-fluid content-wrapper">
-                            <div class="content__group-company-geo__offices__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/contacts__logo__briz-c.png" alt="">
-                                <h2>Бриз-Центр</h2>
-                                <p>Компания осуществляет нанесение дорожной разметки всех видов современнейшей техникой с применением новейших технологий. Машины компании оборудованы инновационной системой обратной связи, которая позволяет оперативно контролировать выполнение работ.</p>
-                                <a href="#">Каталог продукции</a>
-                            </div>
-                            <div class="content__group-company-geo__offices__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/contacts__logo__kdz.png" alt="">
-                                <h2>Красдорзнак</h2>
-                                <p>Собственные инновационные разработки компании, производственные мощности и высокотехнологичное оборудование последнего поколения обеспечивают выпуск продукции с высокими эксплуатационными характеристиками.</p>
-                                <a href="#">Каталог продукции</a>
-                            </div>
-                            <div class="content__group-company-geo__offices__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/contacts__logo__briz-z.png" alt="">
-                                <h2>Бриз-Запад</h2>
-                                <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
-                                <a href="#">Каталог продукции</a>
-                            </div>
-                            <div class="content__group-company-geo__offices__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/contacts__logo__itech.png" alt="">
-                                <h2>Айтехникс</h2>
-                                <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
-                                <a href="#">Светофорное регулирование</a>
-                            </div>
-                            <div class="content__group-company-geo__offices__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/contacts__logo__grand.png" alt="">
-                                <h2>Гранд</h2>
-                                <p>является аккредитованной лабораторией, проводящей испытания различных видов продукции не только в лабораторных условиях, но, непосредственно, на месте производства работ.</p>
-                                <a href="#">Лабораторный контроль</a>
+                            <div class="row">
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__briz-c.png" alt="">
+                                    <h2><a href="#">Бриз-Центр</a></h2>
+                                    <p>Компания осуществляет нанесение дорожной разметки всех видов современнейшей техникой с применением новейших технологий. Машины компании оборудованы инновационной системой обратной связи, которая позволяет оперативно контролировать выполнение работ.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__kdz.png" alt="">
+                                    <h2><a href="#">Красдорзнак</a></h2>
+                                    <p>Собственные инновационные разработки компании, производственные мощности и высокотехнологичное оборудование последнего поколения обеспечивают выпуск продукции с высокими эксплуатационными характеристиками.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__briz-z.png" alt="">
+                                    <h2><a href="##">Бриз-Запад</a></h2>
+                                    <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                </div>
+                            <div class="row">
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__itech.png" alt="">
+                                    <h2><a href="#">Айтехникс</a></h2>
+                                    <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
+                                    <a href="#">Светофорное регулирование</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__grand.png" alt="">
+                                    <h2><a href="#">Гранд</a></h2>
+                                    <p>является аккредитованной лабораторией, проводящей испытания различных видов продукции не только в лабораторных условиях, но, непосредственно, на месте производства работ.</p>
+                                    <a href="#">Лабораторный контроль</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="content__group-company-geo__map container-fluid content-wrapper">
                             <h2>География</h2>
-                            <img src="img/main__map.png" alt="">
+                            <a class="fancybox" href="img/main__map.png"><img src="img/main__map.png" alt=""></a>
                             <ol>
                                 <li>Красноярский край</li>
                                 <li>Республика Хакасия</li>
@@ -241,29 +253,29 @@
                     <div class="content__main-news">
                         
                         <div class="content__main-news__title container-fluid content-wrapper">
-                            <h2>Новости компаний</h2>
+                            <h2><a href="#">Новости компаний</a></h2>
                         </div>
                         <div class="content__main-news__feed container-fluid content-wrapper">
                             <div class="content__main-news__feed__item col-md-3 col-sm-3 col-xs-6" id="news-1">
-                            <img src="img/main__news__null.png" alt="">
-                                <h3>Заголовок новости&nbsp;1</h3>
+                                <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                <h3><a href="#">Заголовок новости&nbsp;1</a></h3>
                                 <p>Собственные инновационные разработки компании, производст&shy;венные мощности и высоко&shy;технологичное оборудование последнего поколения обеспечивают выпуск продукции с высокими эксплуатацион&shy;ными характеристиками</p>
                                 <time datetime="2012-11-28">28.11.2014</time>
                             </div>
                             <div class="content__main-news__feed__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/main__news__null.png" alt="">
-                                <h3>Заголовок новости&nbsp;2</h3>
+                                <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                <h3><a href="#">Заголовок новости&nbsp;2</a></h3>
                                 <time datetime="2012-11-28">28.11.2014</time>
                             </div>
                             <div class="content__main-news__feed__item col-md-3 col-sm-3 col-xs-6">
-                            <img src="img/main__news__null.png" alt="">
-                                <h3>Заголовок новости&nbsp;3 с длинным заголовком в несколько строк</h3>
+                                <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                <h3><a href="#">Заголовок новости&nbsp;3 с длинным заголовком в несколько строк</a></h3>
                                 <p>Собственные инновационные разработки компании, производствен&shy;ные мощности и высоко&shy;технологичное оборудование.</p>
                                 <time datetime="2015-05-12">12.05.2015</time>
                             </div>
                             <div class="content__main-news__feed__item col-md-3 col-sm-3 col-xs-6">
-                                <img src="img/main__news__null.png" alt="">
-                                <h3>Заголовок новости&nbsp;4</h3>
+                                <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                <h3><a href="#">Заголовок новости&nbsp;4</a></h3>
                                 <time datetime="2016-02-01">1.02.2016</time>
                             </div>
                         </div>
@@ -297,8 +309,8 @@
                                     <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">&nbsp;facebook</a>
                                 </div>
                                 <div class="footer__copyright__contacts__email col-md-8 col-sm-8">
-                                    <p><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
-                                    <p><a href="mailto:briz@briz2001.ru">briz@briz2001.ru</a></p>
+                                    <p><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
+                                    <p><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a></p>
                                 </div>
                             </div>
                         </div>
@@ -309,10 +321,10 @@
                         </div>
                         <div class="hidden-sm hidden-md hidden-lg">
                             <div class="footer__copyright__contacts__email col-xs-5">
-                                <p><a href="tel:+78000000000">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
+                                <p><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
                             </div>
                             <div class="footer__copyright__contacts__email col-xs-5" id="ftel">
-                                <p><a href="mailto:briz-centr@briz2001.ru">briz@briz2001.ru</a></p>
+                                <p><a href="mailto:briz-centr@briz2001.ru" class="emaillink">briz@briz2001.ru</a></p>
                             </div>
                             <div class="footer__copyright__contacts__fb col-xs-2">
                                     <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png" alt=""></a>
@@ -335,6 +347,8 @@
     </div>
     <script>
         $(document.body).ready(function () {
+            $(".fancybox").fancybox();
+
             $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close, .header__top__buttons').click(function () {
                 $('.header__menu__dropdown').slideToggle('slow', function () {
                     if ($(this).is(":visible")) {
@@ -343,41 +357,6 @@
                         $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "1");
                     }
                 });
-            });
-            $('.content__manufactor-tag__li').click(function () {
-                $('.content__manufactor-tag__li').each(function (i, elem) {
-                    console.log(elem);
-                    $(elem).removeClass('active-tag');
-                });
-                var firm = $(this).data('firm').toString();
-                $(this).addClass('active-tag');
-                $('.content__manufactor__tab').each(function (i, elem) {
-                    var firms = $(this).data('firm').split(',');
-                    if (firms.indexOf(firm.toString()) == -1) {
-                        $(elem).fadeOut('slow');
-                    } else {
-                        $(elem).fadeIn('slow');
-                    }
-                });
-            });
-            var childs = $('.content__manufactor__column:nth-child(3)').children('.content__manufactor__tab, .content__manufactor__tab--form');
-            $(window).resize(function () {
-                if ($(window).width() < 991) {
-                    $('.content__manufactor__column:nth-child(1)').css("padding-right", "20px");
-                    $('.content__manufactor__column:nth-child(2)').css("padding", "0");
-                    $('.content__manufactor__column:nth-child(3)').css("display", "none");
-                    $(childs).each(function (i) {
-                        if (i == 0 || i % 2) {
-                            $(this).clone().appendTo($('.content__manufactor__column:nth-child(1)'));
-                        } else {
-                            $(this).clone().appendTo($('.content__manufactor__column:nth-child(2)'));
-                        }
-                    });
-                    childs = 0;
-                }
-                if ($(window).width() < 768) {
-                    $('.content__manufactor__column:nth-child(1)').css("padding", "0");
-                }
             });
         });
     </script>
