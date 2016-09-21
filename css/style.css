@@ -519,12 +519,7 @@ textarea:focus {
   text-decoration: none;
   background-color: #f6f8fc;
 }
-.content__contacts {
-  line-height: 1.786;
-}
 .content__contacts h1 {
-  font-size: 42px;
-  font-weight: 300;
   margin: 32px 0;
   line-height: 1.19;
 }
@@ -541,11 +536,8 @@ textarea:focus {
   margin-top: 3px;
 }
 .content__contacts__item__name h2 {
-  font-weight: 300;
-  font-size: 25px;
   margin-bottom: 33px;
   margin-top: 25px;
-  line-height: 1.28;
 }
 .content__contacts__item__descr {
   display: inline-block;
@@ -560,7 +552,6 @@ textarea:focus {
   display: inline-block;
   min-width: 25%;
   vertical-align: top;
-  color: #ea6d62;
 }
 @media (max-width: 480px) {
   .content__contacts__item__descr__key {
