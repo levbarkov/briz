@@ -1320,7 +1320,17 @@ textarea:focus {
 		margin-bottom: 15px;
 		&__title {
 			h2 {
-				margin-bottom: 10px;
+				margin-bottom: 25px;
+				a:link {
+					color: #000;
+					text-decoration: none;
+					border-bottom: none;
+				}
+				a:hover {
+					color: #e74c3c;
+					border-bottom: 1px solid;
+					border-bottom-color: rgba(241, 201, 196, 0.3);
+				}
 			}
 		}
 		&__subgroup {
@@ -1336,8 +1346,14 @@ textarea:focus {
 						border-bottom: 1px solid;
 						border-bottom-color: rgba(178, 178, 178, 0.3);
 					}
+					a:hover {
+						text-decoration: none;
+						border-bottom: none;
+					}
 					a:visited {
 						color: #000;
+						border-bottom: 1px solid;
+						border-bottom-color: rgba(178, 178, 178, 0.3);
 					}
 				}
 			}
@@ -1361,9 +1377,14 @@ textarea:focus {
 					width: 100%;
 					margin-top: 6px;
 					a:link {
-						color: rgba(0, 72, 157, 1);
+						color: rgba(0, 72, 153, 1);
 						border-bottom: 1px solid;
 						border-bottom-color: rgba(175, 201, 224, 0.3);
+					}
+					a:hover {
+						color: #e74c3c;
+						border-bottom: 1px solid;
+						border-bottom-color: rgba(241, 201, 196, 0.3);
 					}
 				}
 				@media (max-width: 480px) {
