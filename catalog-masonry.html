@@ -13,17 +13,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>В г. Красноярске появился первый инновационный светофор</title>
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -155,81 +149,195 @@
                     <li>
                         <a href="#"><img src="img/breadcrumb__home.png" alt=""></a>
                     </li>
-                    <li><a href="#">Группа компаний &laquo;Бриз&raquo;</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">В г. Красноярске появился первый инновационный светофор</a></li>
+                    <li><a href="#">Каталог</a></li>
                 </div>
             </div>
             <div class="container-fluid content-wrapper">
                 <div class="content">
-                    <div class="content__news-one row">
-                            <div class="content__news-one__main__title col-md-8">
-                                <h1>В г. Красноярске появился первый инновационный светофор</h1>
-                                <div class="content__news-one__main__title__item">
-                                    <p class="content__news-one__main__title__item__date">28 ноября 2016</p>
-                                    <p class="content__news-one__main__title__item__tags green">Гранд</p>
-                                    <p class="content__news-one__main__title__item__tags blue">Бриз-центр</p>
-                                    <p class="content__news-one__main__title__item__tags purple">Айтехникс</p>
-                                    <p class="content__news-one__main__title__item__tags orange">Бриз-запад</p>
+                    <nav class="content__catalog-common__manufactor-tag">
+
+                        <li class="content__catalog-common__manufactor-tag__li active-tag" data-firm="all">
+                            <p>Все</p>
+                        </li>
+
+
+                        <li class="content__catalog-common__manufactor-tag__li" data-firm="briz">
+                            <p>Бриз</p>
+                        </li>
+
+                        <li class="content__catalog-common__manufactor-tag__li" data-firm="krasnoyarsk">
+                            <p>Красноярск</p>
+                        </li>
+
+                        <li class="content__catalog-common__manufactor-tag__li" data-firm="stark">
+                            <p>Старк Индастриз</p>
+                        </li>
+
+                        <li class="content__catalog-common__manufactor-tag__li" data-firm="pmz">
+                            <p>Православный металлический завод</p>
+                        </li>
+
+                        <li class="content__catalog-common__manufactor-tag__li" data-firm="krasnodar">
+                            <p>Краснодар</p>
+                        </li>
+                    </nav>
+                    <div class="content__catalog-common__manufactor row masonry-container">
+                            <div class="grid-sizer"></div>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,briz,pmz,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Разметка дорог и парковок</a></h4>
+                                <p>Визуального ориентирования и информирования об условиях и режимах движения на участке дороги.</p>
+                                <ul>
+                                    <li><a href="#">Автомобильные дороги и аэродромы</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Горизонтальная</a></li>
+                                            <li><a href="#">Вертикальная разметка</a></li>
+                                            <li><a href="#">Штучные формы</a></li>
+                                            <li><a href="#">Противоскользящие поверхности</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Парковки</a></li>
+                                    <li><a href="#">Демаркировка</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Краской</a></li>
+                                            <li><a href="#">Гидробластером</a></li>
+                                            <li><a href="#">Механическая</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                                 </div>
                             </div>
-                            <div class="content__news-one__main col-md-8 col-sm-8 col-xs-12">
-                                
-                                <div class="content__news-one__main__text">
-                                    <p>В&nbsp;Красноярске появился светофор, работающий на&nbsp;солнечной батарее и&nbsp;ветрогенераторе. Объект обустроен по&nbsp;адресу&nbsp;ул. Тотмина, 23. Установленный светофор является пилотным проектом по&nbsp;использованию в&nbsp;данной деятельности альтернативных источников энергии.<br>
-                                    &laquo;За&nbsp;последнее время у&nbsp;нас произошло очень много отключений светофорных объектов. Анализ работы светофоров за&nbsp;июль показал, что было 88&nbsp;отключений, из&nbsp;них только 14&nbsp;произошли по&nbsp;причине технической неисправности светофоров. Все остальные&nbsp;&mdash; из-за плановых или аварийных отключений света. Мы&nbsp;начали думать, как эту проблему решить и&nbsp;подрядная организация, которая обслуживает большую часть светофорных объектов в&nbsp;городе, предложила в&nbsp;порядке эксперимента создать светофорный объект на&nbsp;альтернативных источниках питания&raquo;,&nbsp;&mdash; рассказал начальник отдела мониторинга улично-дорожной сети и&nbsp;организации безопасности дорожного движения МКУ &laquo;УДИБ&raquo; Игорь Воевалко.</p>
-
-                                    <p>Тестированием и&nbsp;изготовлением светофора, работающего на&nbsp;альтернативных источниках энергии, занимается компания &laquo;ГРАНД&raquo;, входящая в&nbsp;группу компаний &laquo;БРИЗ&raquo;, занимающаяся комплексным решением организацией безопасного дорожного движения. В&nbsp;компании объект протестировали и&nbsp;предварительные результаты показали, что солнечная батарея может оказаться более эффективной, в&nbsp;отличие от&nbsp;ветряка, так как, в&nbsp;городе плотная застройка и&nbsp;далеко не&nbsp;всегда позволяет пробиться достаточному количеству ветра.</p>
-
-                                    <p>Разработка новинки для светофорного объекта заключается в&nbsp;автоматической системе переключения с&nbsp;альтернативного источника энергии на&nbsp;традиционный режим работы и&nbsp;обратно. На&nbsp;случай длительной пасмурной погоды и&nbsp;полного штиля светофор будет переключаться на&nbsp;основной источник электроэнергии и&nbsp;в</p>
-                                
-                                    <a class="fancybox" href="img/news__item__img__main.png"><img src="img/news__item__img__main.png" alt=""></a>
-                                    <figcaption>Более детальный комментарий в&nbsp;несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамп.</figcaption>
-
-                                    <p>&laquo;Целью проекта была проверка использования в&nbsp;системе светофорного регулирования альтернативного источника энергии&nbsp;&mdash; возобновляемой, экологически чистой. Сейчас данный светофор работает как от&nbsp;внешнего питания, так и&nbsp;от&nbsp;альтернативного источника, то&nbsp;есть при пропадании внешнего питания, он&nbsp;переключается на&nbsp;альтернативный источник энергии, что позволяет ему работать во&nbsp;время аварийного отключения света. При этом была задача минимально изменять конфигурацию светофорного объекта, поэтому мы&nbsp;просто доработали именно в&nbsp;части применения альтернативных источников питания. Мы&nbsp;уже проводили тестирование, при отключении электроэнергии светофорный объект работал бесперебойно в&nbsp;течение 4&nbsp;часов&raquo;,&nbsp;&mdash; пояснил представитель подрядчика&nbsp;&mdash; заместитель генерального директора компании &laquo;ГРАНД&raquo; Денис Митюхин.</p>
-
-                                    <p>Добавим, предположительно тестовой режим займет год, за&nbsp;это время будут собраны энергетические и&nbsp;мощностные характеристики. В&nbsp;случае необходимости объект будет технологически дорабатываться для повышения экономической эффективности и&nbsp;более длительной бесперебойной работы объекта. Светофор оснащен электросчетчиками. <br>
-                                    Старший инспектор отдела ГИБДД Вадим Павлов: &laquo;С&nbsp;учетом того, что светофорные объекты у&nbsp;нас установлены в&nbsp;аварийных опасных местах&nbsp;&mdash; там, где присутствует значительная интенсивность пешеходных и&nbsp;транспортных потоков, поэтому их&nbsp;отключение значительно сказывается на&nbsp;аварийности. С&nbsp;нашей стороны&nbsp;мы, безусловно, за&nbsp;внедрение альтернативных источников питания, что позволит минимизировать их&nbsp;отключения в&nbsp;период плановых и&nbsp;аварийных работ на&nbsp;электросетях&raquo;.</p>
-                                </div>
-                                <blockquote>
-                                    <h3>Вставка</h3>
-                                    <p>&quot;Целью проекта была проверка использования в&nbsp;системе светофорного регулирования альтернативного источника энергии&nbsp;&mdash; возобновляемой, экологически чистой. Сейчас данный светофор работает как от&nbsp;внешнего питания, так и&nbsp;от&nbsp;альтернативного источника, то&nbsp;есть при пропадании внешнего питания, он&nbsp;переключается на&nbsp;альтернативный источник энергии, что позволяет ему работать во&nbsp;время аварийного отключения света.</p>
-                                </blockquote>    
-                            </div>
-                            
-                            <div class="content__news-one__used col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-12">
-                                <div class="content__news-one__used__item">
-                                    <h4><a href="">Битумно-полимерная мастика</a></h4>
-                                    <p>Мастика битумная специфический изоляционный материал для строительных задач. Увеличивает срок службы асфальтобетонного покрытия.</p>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,pmk,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Средства организации дорожного движения</a></h4>
+                                <p>Комплекс услуг по благоустройству автодорог и парковок: искусственные неровности, сигнальные столбики, делиниаторы, пластиковые барьеры.</p>
+                                <ul>
+                                    <li><a href="#">Световозвращатели</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Катафот</a></li>
+                                            <li><a href="#">Парапетный катафот</a></li>
+                                            <li><a href="#">Сигнальный столбик</a></li>
+                                            <li><a href="#">"Кошачий глаз"</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Искусственные неровности</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Асфальтобетонные</a></li>
+                                            <li><a href="#">Резинокордовые</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Прочее</a></li>
+                                </ul>
                                 </div>
                             </div>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,pmk,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Металлоконструкции</a></h4>
+                                <p>Собственные технологии &ndash; двойная отбортовка по всему периметру, длительный период эксплуатации изделия.</p>
+                                <ul>
+                                    <li><a href="#">Шумозащитные экраны</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Прямого исполнения</a></li>
+                                            <li><a href="#">С верхней наклонной частью</a></li>
+                                            <li><a href="#">Декоративный экран</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Остановочные комплексы</a></li>
+                                    <li><a href="#">Автономное уличное освещение</a></li>
+                                    <li><a href="#">Пешеходные ограждения</a></li>
+                                    <li><a href="#">Монтаж металлоизделий</a></li>
+                                    <li><a href="#">Товары народного потребления</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,pmk,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Битумно-полимерная мастика</a></h4>
+                                <p>Мастика битумная специфический изоляционный материал для строительные задачи. Увеличивает срок службы асфальтобетонного покрытия.</p>
+                                </div>
+                            </div>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,briz,pmz,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Светофорное регулирование</a></h4>
+                                <p>Автоматизированная система управления дорожным движением. Комплекс технических, программных и организационных мер, сбор и обработка информации о транспортных потоках и оптимизирующих управление движением, например, &laquo;зеленой волны&raquo;</p>
+                                <ul>
+                                    <li><a href="#">Строительство</a></li>
+                                    <li><a href="#">Содержание</a></li>
+                                    <li><a href="#">Автоматизированная система управления дорожного движения (АСУДД)</a></li>
+                                    <li><a href="#">Светофорные объекты</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Стационарные</a></li>
+                                            <li><a href="#">Мобильные</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="content__catalog-common__manufactor__tab grid-item" data-firm="all,pmk,stark">
+                                <div class="manufactor-wrapper">
+                                <h4><a href="#">Дорожно-знаковая информация</a></h4>
+                                <p>Собственные технологии &ndash; двойная отбортовка по всему периметру, длительный период эксплуатации изделия.</p>
+                                <ul>
+                                    <li><a href="#">Знаки</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Дорожные</a></li>
+                                            <li><a href="#">Охраны труда и безопасности</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Конструктив</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Металлическая подложка</a></li>
+                                            <li><a href="#">Крепежные конструкции и элементы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Электронно-импульсная продукция</a></li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Светодиодные знаки</a></li>
+                                            <li><a href="#">Автономные системы обустройства пешеходных переходов</a></li>
+                                            <li><a href="#">Знаки обратной связи с водителем</a></li>
+                                            <li><a href="#">Другое</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Монтаж</a></li>
+                                </ul>
+                                </div>
+                            </div>
+
+                            <div class="content__catalog-common__manufactor__tab--form grid-item" data-firm="all,briz,pmz,stark">
+                                <div class="form-wrapper">
+                                <div class="content__catalog-common__manufactor__tab--form__content">
+                                    <h4>Ответим на ваши вопросы</h4>
+                                    <p>Менеджер обработает запрос и даст развернутый ответ</p>
+                                    <form action="">
+                                        <textarea name="" id="" placeholder="Ваш вопрос"></textarea>
+                                        <input type="text" placeholder="Эл. почта или телефон">
+                                    </form>
+                                </div>
+                                <div class="content__catalog-common__manufactor__tab--form__button">
+                                    <input type="submit" id="submit" value="Отправить">
+                                </div>
+                                </div>
+                            </div>
+
                     </div>
-                    <div class="content__news-one__other-news row hidden-xs col-sm-12 col-md-12 ">
-                        <div class="content__news-one__other-news__prev col-sm-6 col-md-6">
-                            <div class="content__news-one__other-news__prev__nav col-sm-2 col-md-1">
-                                <p>&larr; Ctrl</p>
-                            </div>
-                            <div class="content__news-one__other-news__prev__news col-sm-6 col-md-6">
-                                <figure>
-                                    <img src="img/news__prev.png" alt="">
-                                    <figcaption>
-                                        <h5>На Федеральных трассах Красноярского края и Республики Хакасия установлены новые светофоры</h5>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="content__news-one__other-news__next col-sm-6 col-md-6">
-                            <div class="content__news-one__other-news__next__news col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-5">
-                                <figure>
-                                    <img src="img/news__next.png" alt="">
-                                    <figcaption>
-                                        <h5>Специалисты «КРАСДОРЗНАК» приняли участие в Транспортном Форуме Сибири – 2015</h5>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="content__news-one__other-news__next__nav col-sm-2 col-md-2">
-                                <p>Ctrl &rarr;</p>
-                            </div>
+
+                    <div class="content__bottom-block row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h4><a href="#">Лабораторный контроль качества</a></h4>
+                            <ul>
+                                <li><a href="#">Операционный, приемочный и эксплуатационный контроли качества дорожной разметки</a></li>
+                                <li><a href="#">Контроль качества разметочных материалов</a></li>
+                                <li><a href="#">Материалов для производства дорожных знаков</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -298,14 +406,31 @@
     </div>
     <script>
         $(document.body).ready(function () {
-            $(".fancybox").fancybox();
-
             $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close').click(function () {
                 $('.header__menu__dropdown').slideToggle('slow', function () {
                     if ($(this).is(":visible")) {
                         $('.header__menu__stable').css("opacity", "0.3");
                     } else {
                         $('.header__menu__stable').css("opacity", "1");
+                    }
+                });
+            });
+
+            $('.masonry-container').masonry({ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "persentPosition": true });
+
+            $('.content__catalog-common__manufactor-tag__li').click(function () {
+                $('.content__catalog-common__manufactor-tag__li').each(function (i, elem) {
+                    console.log(elem);
+                    $(elem).removeClass('active-tag');
+                });
+                var firm = $(this).data('firm').toString();
+                $(this).addClass('active-tag');
+                $('.content__catalog-common__manufactor__tab').each(function (i, elem) {
+                    var firms = $(this).data('firm').split(',');
+                    if (firms.indexOf(firm.toString()) == -1) {
+                        $(elem).fadeOut('slow');
+                    } else {
+                        $(elem).fadeIn('slow');
                     }
                 });
             });
