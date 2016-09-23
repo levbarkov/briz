@@ -5,12 +5,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <script src="js/jquery-2.2.4.min.js"></script>
-    <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
-    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
@@ -70,7 +67,7 @@
                         <div class="header__menu__dropdown row">
                             <div class="header__menu__dropdown__search">
                                 <form action="" class="col-md-12">
-                                    <input data-head-search="" type="text" placeholder="Найти">
+                                    <input type="text" placeholder="Найти">
                                 </form>
                             </div>
                             <div class="header__menu__dropdown__catalog col-md-12">
@@ -361,19 +358,6 @@
                     }
                 });
             });
-
-            //массив объектов
-            availableTags = [
-                {label:"Испанский", value:"es"},
-                {label:"Итальянский", value:"it"},
-                {label:"Английский", value:"en"},
-                {label:"Англиканский", value:"an"},
-                {label:"Китайский", value:"zh"},
-                {label:"Русский", value:"ru"}
-            ];
-
-            // задаем массив в качестве источника слов для автозаполнения.
-            $("[data-head-search]").autocomplete({source: availableTags});
         });
     </script>
 </body>

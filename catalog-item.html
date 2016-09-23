@@ -5,7 +5,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -26,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Дорожный знак</title>
+    <title>Навание товара</title>
 
 </head>
 
@@ -169,509 +168,180 @@
             <div class="container-fluid content-wrapper">
                 <div class="content">
 
-                    <div class="content__left-nav content__accordion-menu col-md-3 col-sm-3 hidden-xs">
+                    <div class="content__left-nav col-md-3 col-sm-3 hidden-xs">
                         <div id="MainMenu">
-                            <div class="list-group panel">
+                          <div class="list-group panel">
 
-                                <a href="#leftnav1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
+                            <a href="#leftnav1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
+                                <div class="item-wrapper">
+                                    <div class="indinav currentgroup"></div>
+                                    <div class="navlabel">Дорожно-знаковая информация</div>
+                                    <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
+                                </div>
+                            </a>
+                            <div class="collapse" id="leftnav1">
+                              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">
+                                <div class="item-wrapper">
+                                    <div class="indinav currentsubgroup"></div>
+                                    <div class="navlabel">Знаки</div> 
+                                    <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
+                                </div>
+                              </a>
+                              <div class="collapse list-group-submenu" id="SubMenu1">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">
                                     <div class="item-wrapper">
-                                        <div class="indinav currentgroup"></div>
-                                        <div class="navlabel">Дорожно-знаковая информация</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
+                                        <div class="indinav currentpage"></div>
+                                        <div class="navlabel">Дорожные</div>
                                     </div>
                                 </a>
-                                <div class="collapse" id="leftnav1">
-                                    <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">
-                                        <div class="item-wrapper">
-                                            <div class="indinav currentsubgroup"></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu1">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu1">
-                                            <div class="item-wrapper">
-                                                <div class="indinav currentpage"></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu1">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu1">
                                     <div class="item-wrapper">
                                         <div class="indinav"></div>
-                                        <div class="navlabel">Конструктив</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
+                                        <div class="navlabel">Охраны труда и безопасности</div>
                                     </div>
                                 </a>
-                                <div class="collapse" id="leftnav2">
-                                    <a href="#SubMenu2" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu2">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu2">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu2">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu2">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Электронно-импульсная продукция</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav3">
-                                    <a href="#SubMenu3" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu3">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu3">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu3">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu3">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Монтаж</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav4">
-                                    <a href="#SubMenu4" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu4">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu4">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu4">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu4">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav5" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Светофорное регулирование</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav5">
-                                    <a href="#SubMenu5" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu5">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu5">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu5">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu5">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav6" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Разметка дорог и парковок</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav6">
-                                    <a href="#SubMenu6" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu6">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu6">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu6">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu6">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav7" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Средства организации дорожного движения</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav7">
-                                    <a href="#SubMenu7" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu7">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu7">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu7">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu7">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav8" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Битумно-полимерная пластика</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav8">
-                                    <a href="#SubMenu8" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu8">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu1">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu8">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu8">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <a href="#leftnav9" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
-                                    <div class="item-wrapper">
-                                        <div class="indinav  "></div>
-                                        <div class="navlabel">Металлоконструкции</div>
-                                        <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="leftnav9">
-                                    <a href="#SubMenu9" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu9">
-                                        <div class="item-wrapper">
-                                            <div class="indinav  "></div>
-                                            <div class="navlabel">Знаки</div> 
-                                            <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div>
-                                        </div>
-                                    </a>
-                                    <div class="collapse list-group-submenu" id="SubMenu9">
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu9">
-                                            <div class="item-wrapper">
-                                                <div class="indinav  "></div>
-                                                <div class="navlabel">Дорожные</div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item" data-parent="#SubMenu9">
-                                            <div class="item-wrapper">
-                                                <div class="indinav"></div>
-                                                <div class="navlabel">Охраны труда и безопасности</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Таблички</div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="list-group-item">
-                                        <div class="item-wrapper">
-                                            <div class="indinav"></div>
-                                            <div class="navlabel">Аксессуары</div>
-                                        </div>
-                                    </a>
-                                </div>
-
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
                             </div>
+
+                            <a href="#leftnav2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Конструктив</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav2">
+                              <a href="#SubMenu2" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки</div> <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu2">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu2"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu2"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Электронно-импульсная продукция</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav3">
+                              <a href="#SubMenu3" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки</div> <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu3">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu3"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu3"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Монтаж</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav4">
+                              <a href="#SubMenu4" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки</div> <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu4">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu4"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu4"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav5" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Светофорное регулирование</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav5">
+                              <a href="#SubMenu5" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки </div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu5">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu5"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu5"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav6" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Разметка дорог и парковок</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav6">
+                              <a href="#SubMenu6" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки</div> <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu6">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu6"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu6"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav7" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Средства организации дорожного движения</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav7">
+                              <a href="#SubMenu7" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки </div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu7">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu7"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu7"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav8" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Битумно-полимерная пластика</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav8">
+                              <a href="#SubMenu8" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки </div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu8">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu8"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu8"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                            <a href="#leftnav9" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"><div class="indinav"></div><div class="navlabel">Металлоконструкции</div><div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                            <div class="collapse" id="leftnav9">
+                              <a href="#SubMenu9" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1"><div class="indinav"></div><div class="navlabel">Знаки</div> <div class="caret-wrapper"><i class="fa fa-caret-down"></i></div></a>
+                              <div class="collapse list-group-submenu" id="SubMenu9">
+                                <a href="#" class="list-group-item" data-parent="#SubMenu9"><div class="indinav"></div><div class="navlabel">Дорожные</div></a>
+                                <a href="#" class="list-group-item" data-parent="#SubMenu9"><div class="indinav"></div><div class="navlabel">Охраны труда и безопасности</div></a>
+                              </div>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Таблички</div></a>
+                              <a href="javascript:;" class="list-group-item"><div class="indinav"></div><div class="navlabel">Еще что-нибудь</div></a>
+                            </div>
+
+                          </div>
                         </div>
                     </div>
 
-                    <div class="content__descr col-md-6 col-sm-6">
-                        <div class="content__descr__title">
-                            <h1>Дорожный знак</h1>
-                        </div>
+                    <div class="content__descr col-md-6 col-lg-6">
+                        <h1>Название товара</h1>
                         <div class="content__descr__main-params">
-                            <h3>Основные характеристики</h3>
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Знак
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    &laquo;Уступи дорогу&raquo; 2.4 
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Типоразмер
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    III (900x900мм)
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Стойка
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    труба D=280мм
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Включение
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    автоматическое
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Технический короб
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    на стойке
-                                </div>
-                            </div>
+                           <h3>Основные характеристики</h3>
+                           <div class="content__descr__main-params__name">
+                               <p id="main-params-name-1">Знак</p>
+                               <p id="main-params-name-2"">Типоразмер</p>
+                               <p id="main-params-name-3"">Стойка</p>
+                               <p id="main-params-name-4"">Включение</p>
+                               <p id="main-params-name-5"">Технический короб</p>
+                           </div>
+                           <div class="content__descr__main-params__value">
+                               <p id="main-params-value-1">&laquo;Уступи дорогу&raquo; 2.4</p>
+                               <p id="main-params-value-2">III (900x900мм)</p>
+                               <p id="main-params-value-3">труба D=280мм</p>
+                               <p id="main-params-value-4">автоматическое</p>
+                               <p id="main-params-value-5">на стойке</p>
+                           </div>
                         </div>
                         <div class="content__descr__img">
                             <figure class="content__descr__img__main">
                                 <a class="fancybox" rel="group" href="img/item-img-main.png"><img src="img/item-img-main.png" alt="" /></a>
                                 <div class="content__descr__img__main__text">Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамповки с двойной отбортовкой по всему периметру.</figcaption>
                             </figure>
-
-                            <div class="content__descr__img__secondary row">
-
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_01.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
-                                    </div>
+                            <div class="content__descr__img__secondary">
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_01.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
                                 </div>
-
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_02.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
-                                    </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_02.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
                                 </div>
-
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_03.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
-                                    </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_03.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
                                 </div>
-
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_04.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
-                                    </div>
+                                <div class="content__descr__img__secondary__item">
+                                    <img src="img/svetofor_04.png" alt="">
+                                    <div class="caption">Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.</div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="content__descr__text">
-                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения.</p>
-                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения</p>
+                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения. Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения</p>
                         </div>
                         <div class="content__form">
                             <div class="content__form__content">
@@ -693,95 +363,68 @@
                         </div>
                     </div>
 
-                    <div class="content__rightbar col-md-3 col-sm-3">
+                    <div class="content__rightbar col-md-3 col-lg-3">
                         <div class="content__rightbar__producer">
                             <div class="content__rightbar__producer__info">
                                 <h5>Производитель</h5>
                                 <img src="img/item-producer-itechniks.png" alt="">
                                 <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
-                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О&nbsp;компании</a></span>
+                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О компании</a></span>
                             </div>
                             <div class="content__rightbar__producer__contacts itechniks">
-                                <p class="content__rightbar__producer__contacts__tel"><a href="tel:+73912040470" class="tellink">8&nbsp;(391)&nbsp;204&nbsp;04&nbsp;70</a></p>
-                                <p class="content__rightbar__producer__contacts__email"><a href="mailto:demomail@mail.ru" class="emaillink">demomail@mail.ru</a></p>
+                                <p class="content__rightbar__producer__contacts__tel">8 (391) 204 04 70</p>
+                                <p class="content__rightbar__producer__contacts__email">demomail@mail.ru</p>
+                                <p><a href="#">Контакты</a></p>
+                            </div>
+                        </div>
+                        <div class="content__rightbar__producer">
+                            <div class="content__rightbar__producer__info">
+                                <h5>Производитель</h5>
+                                <img src="img/item-producer-kdz.png" alt="">
+                                <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
+                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О компании</a></span>
+                            </div>
+                            <div class="content__rightbar__producer__contacts kdz">
+                                <p class="content__rightbar__producer__contacts__tel">8 (391) 204 04 70</p>
+                                <p class="content__rightbar__producer__contacts__email">demomail@mail.ru</p>
                                 <p><a href="#">Контакты</a></p>
                             </div>
                         </div>
                         <div class="content__rightbar__docs">
-                            <div class="sertificates">
                             <h5>Сертификаты</h5>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="##">Методика поверки<span class="doctype">.doc&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    12,23 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Описание типа<span class="ppttype">.ppt&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    5,55 МБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Свидетельство Госреестра<span class="doctype">.doc&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    2,39 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Сертификат соответствия<span class="doctype">.doc&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    1,96 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Разрешение ФСЭТАН<span class="exltype">.exl&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    4,35 МБ
-                                </div>
-                            </div>
-                            </div>
-
-                            <div class="documentation">
+                            <p class="content__rightbar__docs__name"><a href="#">Методика поверки<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">12,23 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Описание типа<span class="ppttype">.ppt&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">5,55 МБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Свидетельство Госреестра<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">2,39 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Сертификат соответствия<span class="doctype">.doc&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">1,96 КБ</p>
+                            <p class="content__rightbar__docs__name"><a href="#">Разрешение ФСЭТАН<span class="exltype">.exl&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">4,35 МБ</p>
                             <h5>Документация</h5>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Руководство по эксплуатации<span class="pdftype">.pdf&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    2,39 МБ
-                                </div>
-                            </div>
-                            </div>
+                            <p class="content__rightbar__docs__name"><a href="#">Руководство по эксплуатации<span class="pdftype">.pdf&nbsp;</span></a></p>
+                            <p class="content__rightbar__docs__size">2,39 МБ</p>
                         </div>
-
+                        <div class="content__rightbar__appfield">
+                            <h5>Области применения</h5>
+                            <p>Парковка</p>
+                            <p>Обозначение перекрестков</p>
+                            <p>Еще способ применения в несколько строчек</p>
+                            <p>И последний способ, неочевидный</p>
+                        </div>
                         <div class="content__rightbar__mention">
                             <img src="img/item-news-mention.png" alt="">
-                            <h5><a href="#">Новость 1</a></h5>
-                            <p class="content__rightbar__mention__text">Самая свежая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
+                            <h5>Упоминание в новостях или ссылка на комплексное решение</h5>
+                            <p class="content__rightbar__mention__text">Описание краткое система управления дорожным движением.Комплекс технических мер. Правления дорожным движением.Комплекс технических мер. Описание краткое система управления дорожным движением.</p>
                             <p class="content__rightbar__mention__date">28 ноября 2016</p>
                         </div>
-                        <div class="content__rightbar__mention">
-                            <img src="img/item-news-mention.png" alt="">
-                            <h5><a href="#">Новость 2</a></h5>
-                            <p class="content__rightbar__mention__text">Более старая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
-                            <p class="content__rightbar__mention__date">13 января 2015</p>
-                        </div>
+                        
                     </div>
 
-                    <div class="content__other-items row hidden-xs col-sm-12 col-md-12 ">
-                        <div class="content__other-items__prev col-sm-6 col-md-6">
-                            <div class="content__other-items__prev__nav col-sm-2 col-md-1">
+                    <div class="content__other-items row col-xs-12 col-sm-12 col-md-12 ">
+                        <div class="content__other-items__prev col-xs-12 col-sm-6 col-md-6">
+                            <div class="content__other-items__prev__nav hidden-xs col-sm-2 col-md-2">
                                 <p>&larr; Ctrl</p>
                             </div>
                             <div class="content__other-items__prev__item col-sm-6 col-md-6">
@@ -794,17 +437,17 @@
                                 </figure>
                             </div>
                         </div>
-                        <div class="content__other-items__next col-sm-6 col-md-6">
-                            <div class="content__other-items__next__item col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-5">
+                        <div class="content__other-items__next col-xs-12 col-sm-6 col-md-6">
+                            <div class="content__other-items__prev__item col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4">
                                 <figure>
                                     <img src="img/item-next.png" alt="">
                                     <figcaption>
-                                        <h5>Название следующего товара</h5>
+                                        <h5>Название предыдущего товара</h5>
                                         Такие устройства регулируют движение автотранспортных средств.
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="content__other-items__next__nav col-sm-2 col-md-1">
+                            <div class="content__other-items__next__nav hidden-xs col-sm-2 col-md-2">
                                 <p>Ctrl &rarr;</p>
                             </div>
                         </div>
@@ -880,6 +523,8 @@
             $(".list-group-item").click(function() {
                 $(this).find(".fa-caret-down").toggleClass("fa-caret-up");
             });
+
+            
 
             $(".fancybox").fancybox();
 
