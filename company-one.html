@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
@@ -60,10 +62,12 @@
                         <div class="header__menu__dropdown row">
                             <div class="header__menu__dropdown__search">
                                 <form action="" class="col-md-12">
-                                    <input type="text" placeholder="Найти">
+                                    <input data-head-search="" type="text" placeholder="Найти">
                                 </form>
                             </div>
                             <div class="header__menu__dropdown__catalog col-md-12">
+                                <ul id="ac-main"></ul>
+
                                 <h4>Каталог</h4>
                                 <div class="col-md-4 col-sm-6">
                                     <ul>
@@ -74,47 +78,43 @@
                                         <li><a href="#">Монтаж</a></li>
                                     </ul>
                                     <ul>
-                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
-                                        <li><a href="#">Знаки</a></li>
-                                        <li><a href="#">Конструктив</a></li>
-                                        <li><a href="#">Электронно-импульсная продукция</a></li>
-                                        <li><a href="#">Монтаж</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
-                                        <li><a href="#">Знаки</a></li>
-                                        <li><a href="#">Конструктив</a></li>
-                                        <li><a href="#">Электронно-импульсная продукция</a></li>
-                                        <li><a href="#">Монтаж</a></li>
+                                        <li class="li__header"><a href="#">Светофорное регулирование</a></li>
+                                        <li><a href="#">Строительство</a></li>
+                                        <li><a href="#">Содержание</a></li>
+                                        <li><a href="#">Автоматизированная система управления дорожного движения (АСУДД)</a></li>
+                                        <li><a href="#">Светофорные объекты</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4  col-sm-6">
                                     <ul>
                                         <li class="li__header"><a href="#">Разметка дорог и парковок</a></li>
-                                        <li><a href="#">Знаки</a></li>
-                                        <li><a href="#">Конструктив</a></li>
-                                        <li><a href="#">Электронно-импульсная продукция</a></li>
-                                        <li><a href="#">Монтаж</a></li>
+                                        <li><a href="#">Автомобильные дороги и аэродромы</a></li>
+                                        <li><a href="#">Парковки</a></li>
+                                        <li><a href="#">Демаркировка</a></li>
                                     </ul>
                                     <ul>
-                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
-                                        <li><a href="#">Знаки</a></li>
-                                        <li><a href="#">Конструктив</a></li>
-                                        <li><a href="#">Электронно-импульсная продукция</a></li>
-                                        <li><a href="#">Монтаж</a></li>
+                                        <li class="li__header"><a href="#">Средства организации дорожного движения</a></li>
+                                        <li><a href="#">Катафот</a></li>
+                                        <li><a href="#">Искуственные неровности</a></li>
+                                        <li><a href="#">Прочее</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4  col-sm-6">
                                     <ul>
-                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
-                                        <li><a href="#">Знаки</a></li>
-                                        <li><a href="#">Конструктив</a></li>
-                                        <li><a href="#">Электронно-импульсная продукция</a></li>
-                                        <li><a href="#">Монтаж</a></li>
+                                        <li class="li__header"><a href="#">Битумно-полимерная пластика</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Металлоконструкции</a></li>
+                                        <li><a href="#">Шумозащитные экраны</a></li>
+                                        <li><a href="#">Остановочные комплексы</a></li>
+                                        <li><a href="#">Автономное уличное освещение</a></li>
+                                        <li><a href="#">Пешеходные ограждения</a></li>
+                                        <li><a href="#">Монтаж металлоизделий</a></li>
+                                        <li><a href="#">Товары народного потребления</a></li>
                                     </ul>
                                 </div>
                                 <h4>Комплексные решения</h4>
-                                <h4>Группа компаний "Бриз"</h4>
+                                <h4>Группа компаний &laquo;Бриз&raquo;</h4>
                                 <div class="col-md-4">
                                     <ul>
                                         <li class="li__header"><a href="#">Бриз-Центр</a></li>
@@ -284,6 +284,28 @@
                     }
                 });
             });
+
+            //массив объектов
+            availableTags = [
+                {label:"Испанский", value:"es"},
+                {label:"Итальянский", value:"it"},
+                {label:"Английский", value:"en"},
+                {label:"Англиканский", value:"an"},
+                {label:"Китайский", value:"zh"},
+                {label:"Русский", value:"ru"}
+            ];
+
+            // задаем массив в качестве источника слов для автозаполнения.
+            $("[data-head-search]").autocomplete({
+                source: availableTags, 
+                open: function() {
+                    $(this)
+                        .autocomplete("widget")
+                        .appendTo("#ac-main")
+                        .css("position", "static");
+                }
+            });
+
         });
     </script>
 </body>
