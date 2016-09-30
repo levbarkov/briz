@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
     <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
@@ -46,8 +47,8 @@
                                 <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a>
                             </div>
                             <div class="header__top__info__contacts col-md-8 col-xs-8 hidden-xs">
-                                <p class="header__top__info__contacts__number"><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
-                                <p class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
+                                <div class="header__top__info__contacts__number"><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></div>
+                                <div class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a></div>
                             </div>
                         </div>
                         <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
@@ -166,11 +167,10 @@
                     <li><a href="#">Название товара</a></li>
                 </div>
             </div>
-            <div class="container-fluid content-wrapper">
                 <div class="content">
-
-                    <div class="content__left-nav content__accordion-menu col-md-3 col-sm-3 hidden-xs">
-                        <div id="MainMenu">
+                    <div class="content__catalog-item content-wrapper container-fluid row">
+                        <div class="content__left-nav content__accordion-menu col-md-3 col-sm-3 hidden-xs">
+                            <div id="MainMenu">
                             <div class="list-group panel">
 
                                 <a href="#leftnav1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">
@@ -561,225 +561,305 @@
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="content__descr col-md-6 col-sm-6">
-                        <div class="content__descr__title">
-                            <h1>Дорожный знак</h1>
-                        </div>
-                        <div class="content__descr__main-params">
-                            <h3>Основные характеристики</h3>
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Знак
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    &laquo;Уступи дорогу&raquo; 2.4 
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Типоразмер
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    III (900x900мм)
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Стойка
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    труба D=280мм
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Включение
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    автоматическое
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="content__descr__main-params__key">
-                                    Технический короб
-                                </div>
-                                <div class="content__descr__main-params__value">
-                                    на стойке
-                                </div>
                             </div>
                         </div>
-                        <div class="content__descr__img">
-                            <figure class="content__descr__img__main">
-                                <a class="fancybox" rel="group" href="img/item-img-main.png"><img src="img/item-img-main.png" alt="" /></a>
-                                <div class="content__descr__img__main__text">Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамповки с двойной отбортовкой по всему периметру.</figcaption>
-                            </figure>
 
-                            <div class="content__descr__img__secondary row">
-
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_01.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
+                        <div class="content__descr col-md-6 col-sm-6">
+                            <div class="content__descr__title">
+                                <h1>Дорожный знак</h1>
+                            </div>
+                            <div class="content__descr__main-params">
+                                <h3>Основные характеристики</h3>
+                                <div>
+                                    <div class="content__descr__main-params__key">
+                                        Знак
+                                    </div>
+                                    <div class="content__descr__main-params__value">
+                                        &laquo;Уступи дорогу&raquo; 2.4 
                                     </div>
                                 </div>
 
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_02.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
+                                <div>
+                                    <div class="content__descr__main-params__key">
+                                        Типоразмер
+                                    </div>
+                                    <div class="content__descr__main-params__value">
+                                        III (900x900мм)
                                     </div>
                                 </div>
 
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_03.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
+                                <div>
+                                    <div class="content__descr__main-params__key">
+                                        Стойка
+                                    </div>
+                                    <div class="content__descr__main-params__value">
+                                        труба D=280мм
                                     </div>
                                 </div>
 
-                                <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
-                                    <div class="item-wrapper">
-                                        <div class="secondary-image">
-                                            <img src="img/svetofor_04.png" alt="">
-                                        </div>
-                                        <div class="caption">
-                                            Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
-                                        </div>
+                                <div>
+                                    <div class="content__descr__main-params__key">
+                                        Включение
+                                    </div>
+                                    <div class="content__descr__main-params__value">
+                                        автоматическое
                                     </div>
                                 </div>
 
+                                <div>
+                                    <div class="content__descr__main-params__key">
+                                        Технический короб
+                                    </div>
+                                    <div class="content__descr__main-params__value">
+                                        на стойке
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="content__descr__text">
-                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения.</p>
-                            <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения</p>
-                        </div>
-                        <div class="content__form">
-                            <div class="content__form__content">
-                                <h4>Ответим на ваши вопросы</h4>
-                                <form action="">
-                                    <textarea name="" id="" placeholder="Сообщение и вопросы"></textarea>
-                                    <input type="text" placeholder="Имя">
-                                    <input type="text" placeholder="Эл. почта или телефон">
-                                    <p>
-                                        <input type="radio" name="customer-type" id="person" value="person"><label for="person">Частное лицо</label>
-                                        <input type="radio" name="customer-type" id="company" value="company"><label for="company">Компания</label>
-                                    </p>
-                                    <input type="text" id="companyname" placeholder="Название">
+                            <div class="content__descr__img">
+                                <figure class="content__descr__img__main">
+                                    <a class="fancybox" rel="group" href="img/item-img-main.png"><img src="img/item-img-main.png" alt="" /></a>
+                                    <figcaption class="content__descr__img__main__text">Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамповки с двойной отбортовкой по всему периметру.</figcaption>
+                                </figure>
+
+                                <div class="content__descr__img__secondary row">
+
+                                    <a href="#">
+                                    <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
+                                        <div class="item-wrapper">
+                                            <div class="secondary-image">
+                                                <img src="img/svetofor_01.png" alt="">
+                                            </div>
+                                            <div class="caption">
+                                                Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">
+                                    <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
+                                        <div class="item-wrapper">
+                                            <div class="secondary-image">
+                                                <img src="img/svetofor_02.png" alt="">
+                                            </div>
+                                            <div class="caption">
+                                                Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                
+                                    <a href="#">
+                                    <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
+                                        <div class="item-wrapper">
+                                            <div class="secondary-image">
+                                                <img src="img/svetofor_03.png" alt="">
+                                            </div>
+                                            <div class="caption">
+                                                Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                
+                                    <a href="#">
+                                    <div class="content__descr__img__secondary__item col-md-6 col-xs-12">
+                                        <div class="item-wrapper">
+                                            <div class="secondary-image">
+                                                <img src="img/svetofor_04.png" alt="">
+                                            </div>
+                                        <div class="caption">
+                                                Тезис к фотографии, небольшое предложение. Например что-то про механизм работы.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="content__descr__text">
+                                <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения.</p>
+                                <p>Такие устройства регулируют движение автотранспортных средств. Компания «Технология» реализует транспортные светофоры, изготовленные с учетом всех требований, предъявляемых к данному типу дорожного оснащения</p>
+                            </div>
+                            <div class="content__form">
+                                <form action="" id="form">
+                                    <div class="content__form__content">
+                                        <h4>Ответим на ваши вопросы</h4>
+                                        <textarea name="" id="" placeholder="Сообщение и вопросы" required></textarea>
+                                        <input type="text" placeholder="Имя" required>
+                                        <input type="text" placeholder="Эл. почта или телефон" required>
+                                        <div class="customer-type"><input type="radio" name="customer-type" id="person" value="person"><label for="person"><span><span></span></span>Частное лицо</label></div>
+                                        <div class="customer-type"><input type="radio" name="customer-type" id="company" value="company" checked><label for="company"><span><span></span></span>Компания</label></div>
+                                        <input type="text" id="companyname" placeholder="Название">
+                                    </div>
+                                    <div class="content__form__button">
+                                        <input  type="submit" id="submit" value="Отправить">
+                                    </div>
                                 </form>
                             </div>
-                            <div class="content__form__button">
-                                <input type="submit" id="submit" value="Отправить">
+                        </div>
+
+                        <div class="content__rightbar col-md-3 col-sm-3">
+                            <div class="content__rightbar__producer">
+                                <div class="content__rightbar__producer__info">
+                                    <h5>Производитель</h5>
+                                    <img src="img/item-producer-itechniks.png" alt="">
+                                    <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
+                                    <span><a href="#">Каталог продукции</a></span> <span><a href="">О&nbsp;компании</a></span>
+                                </div>
+                                <div class="content__rightbar__producer__contacts itechniks">
+                                    <p class="content__rightbar__producer__contacts__tel"><a href="tel:+73912040470" class="tellink">8&nbsp;(391)&nbsp;204&nbsp;04&nbsp;70</a></p>
+                                    <p class="content__rightbar__producer__contacts__email"><a href="mailto:demomail@mail.ru" class="emaillink">demomail@mail.ru</a></p>
+                                    <p><a href="#">Контакты</a></p>
+                                </div>
+                            </div>
+                            <div class="content__rightbar__docs">
+                                <div class="sertificates">
+                                    <h5>Сертификаты</h5>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="##">Методика поверки<span class="doctype">.doc&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            12,23 КБ
+                                        </div>
+                                    </div>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="#">Описание типа<span class="ppttype">.ppt&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            5,55 МБ
+                                        </div>
+                                    </div>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="#">Свидетельство Госреестра<span class="doctype">.doc&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            2,39 КБ
+                                        </div>
+                                    </div>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="#">Сертификат соответствия<span class="doctype">.doc&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            1,96 КБ
+                                        </div>
+                                    </div>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="#">Разрешение ФСЭТАН<span class="exltype">.exl&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            4,35 МБ
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="documentation">
+                                    <h5>Документация</h5>
+                                    <div class="content__rightbar__docs__item">
+                                        <div class="content__rightbar__docs__item__name">
+                                            <a href="#">Руководство по эксплуатации<span class="pdftype">.pdf&nbsp;</span></a>
+                                        </div>
+                                        <div class="content__rightbar__docs__item__size">
+                                            2,39 МБ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content__rightbar__mention">
+                                <img src="img/item-news-mention.png" alt="">
+                                <h5><a href="#">Новость 1</a></h5>
+                                <p class="content__rightbar__mention__text">Самая свежая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
+                                <p class="content__rightbar__mention__date">28 ноября 2016</p>
+                            </div>
+                            <div class="content__rightbar__mention">
+                                <img src="img/item-news-mention.png" alt="">
+                                <h5><a href="#">Новость 2</a></h5>
+                                <p class="content__rightbar__mention__text">Более старая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
+                                <p class="content__rightbar__mention__date">13 января 2015</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="content__rightbar col-md-3 col-sm-3">
-                        <div class="content__rightbar__producer">
-                            <div class="content__rightbar__producer__info">
-                                <h5>Производитель</h5>
-                                <img src="img/item-producer-itechniks.png" alt="">
-                                <p>информация о производителе, услугах и продуктах. Предположим это будет несколько предложений в несколько строк</p>
-                                <span><a href="#">Каталог продукции</a></span> <span><a href="">О&nbsp;компании</a></span>
-                            </div>
-                            <div class="content__rightbar__producer__contacts itechniks">
-                                <p class="content__rightbar__producer__contacts__tel"><a href="tel:+73912040470" class="tellink">8&nbsp;(391)&nbsp;204&nbsp;04&nbsp;70</a></p>
-                                <p class="content__rightbar__producer__contacts__email"><a href="mailto:demomail@mail.ru" class="emaillink">demomail@mail.ru</a></p>
-                                <p><a href="#">Контакты</a></p>
-                            </div>
+                    <div class="content__complex__objects">
+                        <div class="content__complex__objects__title container-fluid content-wrapper">
+                            <h1>Использование в комплексном решении</h1>
                         </div>
-                        <div class="content__rightbar__docs">
-                            <div class="sertificates">
-                            <h5>Сертификаты</h5>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="##">Методика поверки<span class="doctype">.doc&nbsp;</span></a>
+                        
+                        <div class="content__complex__objects__carousel container-fluid content-wrapper">
+                            
+                            <div id="myCarousel" class="carousel slide" data-interval="false">
+                                
+                                <div class="carousel-inner">
+                                    <div class="active item">
+                                        <div class="content__complex__objects__name">
+                                            <h2>Оборудование перекрестка и пешеходного перехода на перекрестке ул. Академика Павлова и ул. Мичурина</h2>
+                                        </div>
+                                        <figure  class="solution-image">
+                                            <a class="fancybox" rel="group" href="img/complex-img-main.jpg""><img src="img/complex-img-main.jpg"></a>
+                                            <figcaption>Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамп</figcaption>
+                                        </figure>
+                                        <div class="content__complex__objects__descr">
+                                            <div class="content__complex__objects__descr__title row">
+                                                <h3>Рассказ о комплексном решении</h3>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text row">
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;БРИЗ-Центр&raquo;</h5>
+                                                <p><span class="blacktext">Горизонтальная</span> — продольная, фигурная и шумовая для регулирования дорожных потоков. На велодорожках нанесена информирующая символьная разметка.</p>
+                                                <p><span class="blacktext">Вертикальная</span> — для обозначения габариты и служит средством зрительного ориентирования.</p>
+                                                <p><span class="blacktext">Готовые штучные формы</span> — дублируют дорожно-знаковую информацию, напоминая водителю о соблюдении ПДД или обращая внимание на опасные участки дороги, требующие особого внимания.</p>
+                                                <p><span class="blacktext">Противоскользящая разметка</span> — использована на автобусной остановке, что удобно для торможения автобусов и безопасности пассажиров.</p>
+                                                <p><span class="blacktext">Перед магазином</span> нанесена разметка для парковки.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;КРАСДОРЗНАК&raquo;</h5>
+                                                <p><span class="blacktext">Дорожно-знаковая информация</span></p>
+                                                <p><span class="blacktext">Пешеходные ограждения, </span>отделяющие проезжую часть от пешеходной.</p>
+                                                <p><span class="blacktext">Автобусная остановка</span></p>
+                                                <p><span class="blacktext">На пешеходном переходе </span>установлена выносная металлическая консоль для светофорного объекта.</p>
+
+                                                <h5>ООО &laquo;Айтехникс&raquo;</h5>
+                                                <p><span class="blacktext">АССУД.</span> Построили, подключили и настроили АСУДД светофорный объект на пешеходном переходе. Сборку самого СО компания осуществляет самостоятельно.</p>
+
+                                                <h5>ООО &laquo;ГРАНД&raquo;</h5>
+                                                <p><span class="blacktext">Проверил на качество</span> и соответствие ГОСТ разметочные материалы и материалы для производства дорожно-знаковой информации.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                            </div>
+                                            </div>
+                                            <div class="content__complex__objects__descr__components row">
+                                                <h3>Компоненты</h3>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-01.png" alt=""></a>
+                                                    <figcaption><a href="#">Знак стрелки</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-02.png" alt=""></a>
+                                                    <figcaption><a href="#">Столбик сигнальный</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-03.png" alt=""></a>
+                                                    <figcaption><a href="#">Светофор мобильный</a></figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    12,23 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Описание типа<span class="ppttype">.ppt&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    5,55 МБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Свидетельство Госреестра<span class="doctype">.doc&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    2,39 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Сертификат соответствия<span class="doctype">.doc&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    1,96 КБ
-                                </div>
-                            </div>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Разрешение ФСЭТАН<span class="exltype">.exl&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    4,35 МБ
-                                </div>
-                            </div>
                             </div>
 
-                            <div class="documentation">
-                            <h5>Документация</h5>
-                            <div class="content__rightbar__docs__item">
-                                <div class="content__rightbar__docs__item__name">
-                                    <a href="#">Руководство по эксплуатации<span class="pdftype">.pdf&nbsp;</span></a>
-                                </div>
-                                <div class="content__rightbar__docs__item__size">
-                                    2,39 МБ
-                                </div>
-                            </div>
-                            </div>
                         </div>
-
-                        <div class="content__rightbar__mention">
-                            <img src="img/item-news-mention.png" alt="">
-                            <h5><a href="#">Новость 1</a></h5>
-                            <p class="content__rightbar__mention__text">Самая свежая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
-                            <p class="content__rightbar__mention__date">28 ноября 2016</p>
-                        </div>
-                        <div class="content__rightbar__mention">
-                            <img src="img/item-news-mention.png" alt="">
-                            <h5><a href="#">Новость 2</a></h5>
-                            <p class="content__rightbar__mention__text">Более старая новость компании, в которой упомянут данный товар. Здесь отображается её краткое содержание, а полное &mdash; доступно по ссылке в заголовке.</p>
-                            <p class="content__rightbar__mention__date">13 января 2015</p>
-                        </div>
+                        
                     </div>
-
-                    <div class="content__other-items row hidden-xs col-sm-12 col-md-12 ">
+                    <div class="content__other-items-wrapper content-wrapper container-fluid row">
+                    <div class="content__other-items hidden-xs col-sm-12 col-md-12">
                         <div class="content__other-items__prev col-sm-6 col-md-6">
                             <div class="content__other-items__prev__nav col-sm-2 col-md-1">
                                 <p>&larr; Ctrl</p>
@@ -788,7 +868,7 @@
                                 <figure>
                                     <img src="img/item-prev.png" alt="">
                                     <figcaption>
-                                        <h5>Название предыдущего товара</h5>
+                                        <h5><a href="###">Название предыдущего товара</a></h5>
                                         Такие устройства регулируют движение автотранспортных средств.
                                     </figcaption>
                                 </figure>
@@ -799,7 +879,7 @@
                                 <figure>
                                     <img src="img/item-next.png" alt="">
                                     <figcaption>
-                                        <h5>Название следующего товара</h5>
+                                        <h5><a href="#">Название следующего товара</a></h5>
                                         Такие устройства регулируют движение автотранспортных средств.
                                     </figcaption>
                                 </figure>
@@ -809,10 +889,10 @@
                             </div>
                         </div>
                     </div>
+                    </div>
 
                 </div>
             </div>
-        </div>
         <footer>
             <div class="footer">
                 <div class="footer__menu">
@@ -838,34 +918,34 @@
                                     <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">&nbsp;facebook</a>
                                 </div>
                                 <div class="footer__copyright__contacts__email col-md-8 col-sm-8">
-                                    <p><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
-                                    <p><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a></p>
+                                    <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                                    <a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
                                 </div>
                             </div>
                         </div>
                         <div class="hidden-xs">
-                            <div class="footer__copyright__briz col-md-12">
-                                <p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</p>
+                            <div class="footer__copyright__briz col-md-12 col-sm-12">
+                                &copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены
                             </div>
                         </div>
                         <div class="hidden-sm hidden-md hidden-lg">
                             <div class="footer__copyright__contacts__email col-xs-5">
-                                <p><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></p>
+                                <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
                             </div>
                             <div class="footer__copyright__contacts__email col-xs-5" id="ftel">
-                                <p><a href="mailto:briz-centr@briz2001.ru" class="emaillink">briz@briz2001.ru</a></p>
+                                <a href="mailto:briz-centr@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
                             </div>
                             <div class="footer__copyright__contacts__fb col-xs-2">
-                                    <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png" alt=""></a>
+                                <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png" alt=""></a>
                             </div>
                         </div>
                         <div class="hidden-sm hidden-md hidden-lg">
                             <div class="footer__copyright__briz col-xs-8">
-                                <p>&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены<p>
+                                <div class="briz-m-wrapper">&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</div>
                             </div>
                             <div class="footer__copyright__bureauit col-xs-4" id="f-mob-crb">
-                                <div><p>Разработка &mdash;<br>
-                                <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a></p>
+                                <div>Разработка &mdash;<br>
+                                <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
                                 </div>
                             </div>
                         </div>
@@ -886,6 +966,8 @@
                     }
                 });
             });
+
+            $('input, textarea').placeholder();
 
             //массив объектов
             availableTags = [
@@ -914,6 +996,13 @@
 
             $(".fancybox").fancybox();
 
+            $(".content__descr__img__secondary__item").click(function (event) {
+                    event.preventDefault();
+                    var top = $(".content__descr__img__main").offset().top;
+
+                    $('body,html').animate({scrollTop: top}, 400);
+            });
+
             $("#person").click(function () {
               $("#companyname").hide();
             });
@@ -921,15 +1010,18 @@
             $("#company").click(function () {
               $("#companyname").show();
             });
-
-            $("#submit").click(function () {
+            
+            $("#form").submit(function () {   
+               
               swal({
                 title: "Ваше сообщение отправлено!",   
                 text: "Мы свяжемся с вами в ближайшее время",   
                 type: "success",   
-                confirmButtonText: "OК" });
+                confirmButtonText: "OК",
+                closeOnConfirm: true });
+               return false;
             });
-
+            
 
         });
     </script>

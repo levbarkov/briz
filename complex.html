@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/jquery.bcSwipe.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Комплексные решения</title>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__top__logo col-md-6 col-xs-6 col-sm-3">
+                            <a href="#"><img src="img/header__logo.png" alt=""></a>
+                        </div>
+                        <div class="header__top__info col-md-6 col-xs-9 col-sm-9 hidden-xs">
+                            <div class="header__top__info__fb col-md-4 col-xs-4">
+                                <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a>
+                            </div>
+                            <div class="header__top__info__contacts col-md-8 col-xs-8 hidden-xs">
+                                <div class="header__top__info__contacts__number"><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></div>
+                                <div class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a></div>
+                            </div>
+                        </div>
+                        <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
+                            <img src="img/hamburger__xs.png" alt="">
+                            <img src="img/search__xs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__stable">
+                            <nav class="col-md-10 col-xs-12 col-sm-11">
+                                <li class="header__menu__hamburger hidden-xs"><a href="#"><img src="img/hamburger__icon.png" alt=""></a></li>
+                                <li id="nav-catalog"><a href="#">Каталог</a></li>
+                                <li id="nav-complex"><a href="#">Комплексные решения</a></li>
+                                <li id="nav-group"><a href="#">Группа компаний БРИЗ</a></li>
+                                <li id="nav-contacts"><a href="#">Контакты</a></li>
+                            </nav>
+                            <div class="header__menu__search col-md-2 col-sm-1 hidden-xs">
+                                <a href="#"><img src="img/search__icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__dropdown row">
+                            <div class="header__menu__dropdown__search">
+                                <form action="" class="col-md-12">
+                                    <input data-head-search="" type="text" placeholder="Найти">
+                                </form>
+                            </div>
+                            <div class="header__menu__dropdown__catalog col-md-12">
+                                <ul id="ac-main"></ul>
+
+                                <h4>Каталог</h4>
+                                <div class="col-md-4 col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Светофорное регулирование</a></li>
+                                        <li><a href="#">Строительство</a></li>
+                                        <li><a href="#">Содержание</a></li>
+                                        <li><a href="#">Автоматизированная система управления дорожного движения (АСУДД)</a></li>
+                                        <li><a href="#">Светофорные объекты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4  col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Разметка дорог и парковок</a></li>
+                                        <li><a href="#">Автомобильные дороги и аэродромы</a></li>
+                                        <li><a href="#">Парковки</a></li>
+                                        <li><a href="#">Демаркировка</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Средства организации дорожного движения</a></li>
+                                        <li><a href="#">Катафот</a></li>
+                                        <li><a href="#">Искуственные неровности</a></li>
+                                        <li><a href="#">Прочее</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4  col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Битумно-полимерная пластика</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Металлоконструкции</a></li>
+                                        <li><a href="#">Шумозащитные экраны</a></li>
+                                        <li><a href="#">Остановочные комплексы</a></li>
+                                        <li><a href="#">Автономное уличное освещение</a></li>
+                                        <li><a href="#">Пешеходные ограждения</a></li>
+                                        <li><a href="#">Монтаж металлоизделий</a></li>
+                                        <li><a href="#">Товары народного потребления</a></li>
+                                    </ul>
+                                </div>
+                                <h4>Комплексные решения</h4>
+                                <h4>Группа компаний &laquo;Бриз&raquo;</h4>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-Центр</a></li>
+                                        <li class="li__header"><a href="#">Краснодарск</a></li>
+                                        <li class="li__header"><a href="#">Гранд</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-запад</a></li>
+                                        <li class="li__header"><a href="#">Айтехникс</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="#">Новости группы</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="breadcrumbs">
+                <div class="container-fluid content-wrapper">
+                    <li>
+                        <a href="#"><img src="img/breadcrumb__home.png" alt=""></a>
+                    </li>
+                    <li><a href="#">Группа компаний &laquo;Бриз&raquo;</a></li>
+                    <li><a href="#">Комплексные решения</a></li>
+                </div>
+            </div>
+                <div class="content">
+                    
+                    <div class="content__complex__intro">
+                        <div class="content__complex__intro__title container-fluid content-wrapper">
+                            <h1>Комплексные решения</h1>
+                        </div>
+                        <div class="content__complex__intro__text container-fluid content-wrapper">
+                            <p>Полностью организуем работу над благоустройством и организацией дорожного движения.    Работы выполняются собственными силами с использованием продукции группы «БРИЗ». Компании группы развиваются в ногу со временем, используют в работе современную технику и оборудование. Компании ведут разработку инновационных продуктов, успешные внедряются в работу и используются на объектах.</p>
+                        </div>
+                    </div>
+
+                    <div class="content__complex__objects">
+                        <div class="content__complex__objects__title container-fluid content-wrapper">
+                            <h1>Объекты</h1>
+                        </div>
+                        
+                        <div class="content__complex__objects__carousel container-fluid content-wrapper">
+                            
+                            <div id="myCarousel" class="carousel slide" data-interval="false">
+                                
+                                <div class="carousel-inner">
+                                    <div class="active item">
+                                        <div class="content__complex__objects__name">
+                                            <h2>Оборудование перекрестка и пешеходного перехода на перекрестке ул. Академика Павлова и ул. Мичурина</h2>
+                                        </div>
+                                        <figure  class="solution-image">
+                                            <a class="fancybox" href="img/complex-img-main.jpg""><img src="img/complex-img-main.jpg"></a>
+                                            <figcaption>Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамп</figcaption>
+                                        </figure>
+                                        <div class="content__complex__objects__descr">
+                                            <div class="content__complex__objects__descr__title row">
+                                                <h3>Рассказ о комплексном решении</h3>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text row">
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;БРИЗ-Центр&raquo;</h5>
+                                                <p><span class="blacktext">Горизонтальная</span> — продольная, фигурная и шумовая для регулирования дорожных потоков. На велодорожках нанесена информирующая символьная разметка.</p>
+                                                <p><span class="blacktext">Вертикальная</span> — для обозначения габариты и служит средством зрительного ориентирования.</p>
+                                                <p><span class="blacktext">Готовые штучные формы</span> — дублируют дорожно-знаковую информацию, напоминая водителю о соблюдении ПДД или обращая внимание на опасные участки дороги, требующие особого внимания.</p>
+                                                <p><span class="blacktext">Противоскользящая разметка</span> — использована на автобусной остановке, что удобно для торможения автобусов и безопасности пассажиров.</p>
+                                                <p><span class="blacktext">Перед магазином</span> нанесена разметка для парковки.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;КРАСДОРЗНАК&raquo;</h5>
+                                                <p><span class="blacktext">Дорожно-знаковая информация</span></p>
+                                                <p><span class="blacktext">Пешеходные ограждения, </span>отделяющие проезжую часть от пешеходной.</p>
+                                                <p><span class="blacktext">Автобусная остановка</span></p>
+                                                <p><span class="blacktext">На пешеходном переходе </span>установлена выносная металлическая консоль для светофорного объекта.</p>
+
+                                                <h5>ООО &laquo;Айтехникс&raquo;</h5>
+                                                <p><span class="blacktext">АССУД.</span> Построили, подключили и настроили АСУДД светофорный объект на пешеходном переходе. Сборку самого СО компания осуществляет самостоятельно.</p>
+
+                                                <h5>ООО &laquo;ГРАНД&raquo;</h5>
+                                                <p><span class="blacktext">Проверил на качество</span> и соответствие ГОСТ разметочные материалы и материалы для производства дорожно-знаковой информации.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                            </div>
+                                            </div>
+                                            <div class="content__complex__objects__descr__components row">
+                                                <h3>Компоненты</h3>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-01.png" alt=""></a>
+                                                    <figcaption><a href="#">Знак стрелки</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-02.png" alt=""></a>
+                                                    <figcaption><a href="#">Столбик сигнальный</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-03.png" alt=""></a>
+                                                    <figcaption><a href="#">Светофор мобильный</a></figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content__complex__objects__name">
+                                            <h2>Оборудование перекрестка и пешеходного перехода на перекрестке ул. Академика Павлова и ул. Мичурина</h2>
+                                        </div>
+                                        <figure class="solution-image">
+                                            <a class="fancybox" href="img/complex-img-main.jpg""><img src="img/complex-img-main.jpg"></a>
+                                            <figcaption>Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамп</figcaption>
+                                        </figure>
+                                        <div class="content__complex__objects__descr">
+                                            <div class="content__complex__objects__descr__title row">
+                                                <h3>Рассказ о комплексном решении</h3>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text row">
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;БРИЗ-Центр&raquo;</h5>
+                                                <p><span class="blacktext">Горизонтальная</span> — продольная, фигурная и шумовая для регулирования дорожных потоков. На велодорожках нанесена информирующая символьная разметка.</p>
+                                                <p><span class="blacktext">Вертикальная</span> — для обозначения габариты и служит средством зрительного ориентирования.</p>
+                                                <p><span class="blacktext">Готовые штучные формы</span> — дублируют дорожно-знаковую информацию, напоминая водителю о соблюдении ПДД или обращая внимание на опасные участки дороги, требующие особого внимания.</p>
+                                                <p><span class="blacktext">Противоскользящая разметка</span> — использована на автобусной остановке, что удобно для торможения автобусов и безопасности пассажиров.</p>
+                                                <p><span class="blacktext">Перед магазином</span> нанесена разметка для парковки.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;КРАСДОРЗНАК&raquo;</h5>
+                                                <p><span class="blacktext">Дорожно-знаковая информация</span></p>
+                                                <p><span class="blacktext">Пешеходные ограждения, </span>отделяющие проезжую часть от пешеходной.</p>
+                                                <p><span class="blacktext">Автобусная остановка</span></p>
+                                                <p><span class="blacktext">На пешеходном переходе </span>установлена выносная металлическая консоль для светофорного объекта.</p>
+
+                                                <h5>ООО &laquo;Айтехникс&raquo;</h5>
+                                                <p><span class="blacktext">АССУД.</span> Построили, подключили и настроили АСУДД светофорный объект на пешеходном переходе. Сборку самого СО компания осуществляет самостоятельно.</p>
+
+                                                <h5>ООО &laquo;ГРАНД&raquo;</h5>
+                                                <p><span class="blacktext">Проверил на качество</span> и соответствие ГОСТ разметочные материалы и материалы для производства дорожно-знаковой информации.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                            </div>
+                                            </div>
+                                            <div class="content__complex__objects__descr__components row">
+                                                <h3>Компоненты</h3>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-01.png" alt=""></a>
+                                                    <figcaption><a href="#">Знак стрелки</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-02.png" alt=""></a>
+                                                    <figcaption><a href="#">Столбик сигнальный</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-03.png" alt=""></a>
+                                                    <figcaption><a href="#">Светофор мобильный</a></figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content__complex__objects__name">
+                                            <h2>Оборудование перекрестка и пешеходного перехода на перекрестке ул. Академика Павлова и ул. Мичурина</h2>
+                                        </div>
+                                        <figure class="solution-image">
+                                            <a class="fancybox" href="img/complex-img-main.jpg""><img src="img/complex-img-main.jpg"></a>
+                                            <figcaption>Более детальный комментарий в несколько строчек. Маска выполнена методом шелкографии. Подложка знака выполнена методом штамп</figcaption>
+                                        </figure>
+                                        <div class="content__complex__objects__descr">
+                                            <div class="content__complex__objects__descr__title row">
+                                                <h3>Рассказ о комплексном решении</h3>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text row">
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;БРИЗ-Центр&raquo;</h5>
+                                                <p><span class="blacktext">Горизонтальная</span> — продольная, фигурная и шумовая для регулирования дорожных потоков. На велодорожках нанесена информирующая символьная разметка.</p>
+                                                <p><span class="blacktext">Вертикальная</span> — для обозначения габариты и служит средством зрительного ориентирования.</p>
+                                                <p><span class="blacktext">Готовые штучные формы</span> — дублируют дорожно-знаковую информацию, напоминая водителю о соблюдении ПДД или обращая внимание на опасные участки дороги, требующие особого внимания.</p>
+                                                <p><span class="blacktext">Противоскользящая разметка</span> — использована на автобусной остановке, что удобно для торможения автобусов и безопасности пассажиров.</p>
+                                                <p><span class="blacktext">Перед магазином</span> нанесена разметка для парковки.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <h5>ООО &laquo;КРАСДОРЗНАК&raquo;</h5>
+                                                <p><span class="blacktext">Дорожно-знаковая информация</span></p>
+                                                <p><span class="blacktext">Пешеходные ограждения, </span>отделяющие проезжую часть от пешеходной.</p>
+                                                <p><span class="blacktext">Автобусная остановка</span></p>
+                                                <p><span class="blacktext">На пешеходном переходе </span>установлена выносная металлическая консоль для светофорного объекта.</p>
+
+                                                <h5>ООО &laquo;Айтехникс&raquo;</h5>
+                                                <p><span class="blacktext">АССУД.</span> Построили, подключили и настроили АСУДД светофорный объект на пешеходном переходе. Сборку самого СО компания осуществляет самостоятельно.</p>
+
+                                                <h5>ООО &laquo;ГРАНД&raquo;</h5>
+                                                <p><span class="blacktext">Проверил на качество</span> и соответствие ГОСТ разметочные материалы и материалы для производства дорожно-знаковой информации.</p>
+                                            </div>
+                                            <div class="content__complex__objects__descr__text__column col-md-4 col-sm-4">
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                                <p>Компания так же установила искусственные неровности («лежачий полицейский») для снижения скорости ТС перед пересечением автомобильной дороги и велодорожки.</p>
+                                            </div>
+                                            </div>
+                                            <div class="content__complex__objects__descr__components row">
+                                                <h3>Компоненты</h3>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-01.png" alt=""></a>
+                                                    <figcaption><a href="#">Знак стрелки</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2 col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-02.png" alt=""></a>
+                                                    <figcaption><a href="#">Столбик сигнальный</a></figcaption>
+                                                </figure>
+                                                <figure class="content__complex__objects__descr__components__item col-md-2col-sm-3 col-xs-4">
+                                                    <a href="#"><img src="img/components-img-03.png" alt=""></a>
+                                                    <figcaption><a href="#">Светофор мобильный</a></figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                  
+                                    <figure class="chevron chevron-right">
+                                        <img src="img/slider-nav.png">
+                                        <figcaption>Следующее <br>комплексное <br>решение</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            
+        <footer>
+            <div class="footer">
+                <div class="footer__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="footer__menu__stable">
+                            <nav>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Комплексные решения</a></li>
+                                <li><a href="#">Группа компаний БРИЗ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container-fluid content-wrapper">
+                        <div class="hidden-xs">
+                            <div class="footer__copyright__bureauit col-md-5 col-sm-4">
+                                Разработка сайта &mdash; <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
+                            </div>
+                            <div class="footer__copyright__contacts col-md-7 col-sm-8">
+                                <div class="footer__copyright__contacts__fb col-md-4 col-sm-4">
+                                    <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">&nbsp;facebook</a>
+                                </div>
+                                <div class="footer__copyright__contacts__email col-md-8 col-sm-8">
+                                    <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                                    <a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs">
+                            <div class="footer__copyright__briz col-md-12 col-sm-12">
+                                &copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены
+                            </div>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <div class="footer__copyright__contacts__email col-xs-5">
+                                <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                            </div>
+                            <div class="footer__copyright__contacts__email col-xs-5" id="ftel">
+                                <a href="mailto:briz-centr@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
+                            </div>
+                            <div class="footer__copyright__contacts__fb col-xs-2">
+                                <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <div class="footer__copyright__briz col-xs-8">
+                                <div class="briz-m-wrapper">&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</div>
+                            </div>
+                            <div class="footer__copyright__bureauit col-xs-4" id="f-mob-crb">
+                                <div>Разработка &mdash;<br>
+                                <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(document.body).ready(function () {
+
+            $(".fancybox").fancybox();
+
+            $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close, .header__top__buttons').click(function () {
+                $('.header__menu__dropdown').slideToggle('slow', function () {
+                    if ($(this).is(":visible")) {
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "0.3");
+                    } else {
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "1");
+                    }
+                });
+            });
+
+            $('.carousel').bcSwipe({ threshold: 50 });
+
+            //массив объектов
+            availableTags = [
+                {label:"Испанский", value:"es"},
+                {label:"Итальянский", value:"it"},
+                {label:"Английский", value:"en"},
+                {label:"Англиканский", value:"an"},
+                {label:"Китайский", value:"zh"},
+                {label:"Русский", value:"ru"}
+            ];
+
+            // задаем массив в качестве источника слов для автозаполнения.
+            $("[data-head-search]").autocomplete({
+                source: availableTags, 
+                open: function() {
+                    $(this)
+                        .autocomplete("widget")
+                        .appendTo("#ac-main")
+                        .css("position", "static");
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
