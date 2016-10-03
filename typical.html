@@ -77,7 +77,59 @@
                                 </form>
                             </div>
                             <div class="header__menu__dropdown__catalog col-md-12">
-                                <ul id="ac-main"></ul>
+                                <div id="ac-main">
+                                    <ul>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Рамзан Кадыров наградил командующего Росгвардией орденом Ахмата Кадырова</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                6 дней назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Глава Ингушетии объяснил изгнание правозащитников из республики своими отношениями с Кадыровым</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                час назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Правозащитника Игоря Каляпина закидали яйцами во время пресс конференции</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                2 года назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Центр "Э" попросил "Луркоморье" раскрыть авторов статей о Кадырове и коктейле Молотова</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                2 года назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">В Грозном освобождены правозащитники из Комитета против пыток</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                6 дней назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Кадыров обвинил комитет против пыток в провокации</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                год назад
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="show-more"><a href="#">Показать еще</a></div>
+                                </div>
 
                                 <h4>Каталог</h4>
                                 <div class="col-md-4 col-sm-6">
@@ -329,9 +381,9 @@
             $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close, .header__top__buttons').click(function () {
                 $('.header__menu__dropdown').slideToggle('slow', function () {
                     if ($(this).is(":visible")) {
-                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "0.3");
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').addClass("nav-shadow");
                     } else {
-                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').css("opacity", "1");
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').removeClass("nav-shadow");
                     }
                 });
             });
