@@ -590,6 +590,7 @@ textarea:focus {
 }
 .content__complex__objects .solution-image {
   width: 66.66%;
+  padding-right: 15px;
 }
 @media (max-width: 767px) {
   .content__complex__objects .solution-image {
@@ -1439,6 +1440,7 @@ textarea:focus {
 .content__company-one__about__quoteauthor {
   display: table;
   margin-bottom: 40px;
+  border-bottom: 1px solid #e5ecf5;
 }
 .content__company-one__about__quoteauthor h5 {
   font-size: 14px;
@@ -2569,13 +2571,11 @@ textarea:focus {
 }
 .content__catalog-common__manufactor {
   margin-left: 0;
-  margin-right: 0
-  /*
-        	display: flex;
-        	flex: 1 1 auto;
-        	align-content: flex-start;
-        	flex-flow: row wrap;
-        	*/
+}
+@media (min-width: 768px) {
+  .content__catalog-common__manufactor {
+    margin-right: -15px;
+  }
 }
 .content__catalog-common__manufactor__tab {
   padding-left: 0;
@@ -2583,7 +2583,7 @@ textarea:focus {
 }
 @media (max-width: 767px) {
   .content__catalog-common__manufactor__tab {
-    padding-right: 0;
+    padding-right: 15px;
   }
 }
 .content__catalog-common__manufactor__tab .manufactor-wrapper {

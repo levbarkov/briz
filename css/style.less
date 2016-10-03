@@ -565,6 +565,7 @@ textarea:focus {
 			}
 			.solution-image {
 				width: 66.66%;
+				padding-right: 15px;
 				@media (max-width: 767px) {
 					width: 100%;
 					padding-right: 0;
@@ -1425,6 +1426,7 @@ textarea:focus {
 			&__quoteauthor {
 				display: table;
 				margin-bottom: 40px;
+				border-bottom: 1px solid #e5ecf5;
 				h5 {
 					font-size: 14px;
 					font-weight: 700;
@@ -2570,18 +2572,14 @@ textarea:focus {
     	}
     	&__manufactor {
         	margin-left: 0;
-        	margin-right: 0;
-        	/*
-        	display: flex;
-        	flex: 1 1 auto;
-        	align-content: flex-start;
-        	flex-flow: row wrap;
-        	*/
+        	@media (min-width: 768px) {
+        		margin-right: -15px;
+        	}
         	&__tab {
         		padding-left: 0;
         		margin-bottom: 20px;
         		@media (max-width: 767px) {
-        				padding-right: 0;
+        				padding-right: 15px;
         		}
         		.manufactor-wrapper {
             		padding-top: 20px;
