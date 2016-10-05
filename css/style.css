@@ -128,13 +128,14 @@ body h6 a:hover {
   border-bottom-color: rgba(248, 201, 196, 0.3);
 }
 .rotate {
+  -moz-transition: all 2s linear;
   -webkit-transition: all 2s linear;
   transition: all 2s linear;
 }
 .rotate.down {
+  -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 input[type="text"]:focus,
 input[type="button"]:focus,
@@ -1091,7 +1092,7 @@ textarea:focus {
   display: inline-block;
   width: 70%;
   padding-right: 0;
-  padding-left: 0
+  padding-left: 0;
   /* making 24/7 tech support button */
 }
 .content__contacts__item__descr__value #alldayhelp {
@@ -2007,6 +2008,9 @@ textarea:focus {
   text-decoration: none;
   border-bottom: none;
 }
+.content__other-items__prev__text__title p {
+  font-size: 12px;
+}
 .content__other-items__prev__image {
   display: inline-block;
   margin-left: 53px;
@@ -2082,6 +2086,9 @@ textarea:focus {
 .content__other-items__next__text__title h5 a:visited {
   text-decoration: none;
   border-bottom: none;
+}
+.content__other-items__next__text__title p {
+  font-size: 12px;
 }
 .content__other-items__next__image {
   display: inline-block;
@@ -2478,9 +2485,7 @@ textarea:focus {
 }
 @media (max-width: 991px) {
   .content__group-company-geo__map ol {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+    column-count: 2;
   }
 }
 .content__group-company-geo__map ol li:nth-of-type(1) {
