@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.easing.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/jquery.matchHeight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script  src="js/skrollr.min.js"></script>  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/scrollpath.css">  -->
+    <!-- <script type="text/javascript" src="js/jquery.scrollpath.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/demo.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/scrollpath-style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/scrollpath.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__top__logo col-md-6 col-xs-6 col-sm-3">
+                            <a href="#"><img src="img/header__logo.png" alt=""></a>
+                        </div>
+                        <div class="header__top__info col-md-6 col-xs-9 col-sm-9 hidden-xs">
+                            <div class="header__top__info__fb col-md-4 col-xs-4">
+                                <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">facebook</a>
+                            </div>
+                            <div class="header__top__info__contacts col-md-8 col-xs-8 hidden-xs">
+                                <div class="header__top__info__contacts__number"><a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a></div>
+                                <div class="header__top__info__contacts__email"><a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a></div>
+                            </div>
+                        </div>
+                        <div class="header__top__buttons col-xs-6 visible-xs-inline-block">
+                            <img src="img/hamburger__xs.png" alt="">
+                            <img src="img/search__xs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__stable">
+                            <nav class="col-md-10 col-xs-12 col-sm-11">
+                                <li class="header__menu__hamburger hidden-xs"><a href="#"><img src="img/hamburger__icon.png" alt=""></a></li>
+                                <li id="nav-catalog"><a href="#">Каталог</a></li>
+                                <li id="nav-complex"><a href="#">Комплексные решения</a></li>
+                                <li id="nav-group"><a href="#">Группа компаний БРИЗ</a></li>
+                                <li id="nav-contacts"><a href="#">Контакты</a></li>
+                            </nav>
+                            <div class="header__menu__search col-md-2 col-sm-1 hidden-xs">
+                                <a href="#"><img src="img/search__icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid content-wrapper">
+                        <div class="header__menu__dropdown row">
+                            <div class="header__menu__dropdown__search">
+                                <form action="" class="col-md-12">
+                                    <input data-head-search="" type="text" placeholder="Найти">
+                                </form>
+                            </div>
+                            <div class="header__menu__dropdown__catalog col-md-12">
+                                <div id="ac-main">
+                                    <ul>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Рамзан Кадыров наградил командующего Росгвардией орденом Ахмата Кадырова</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                6 дней назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Глава Ингушетии объяснил изгнание правозащитников из республики своими отношениями с Кадыровым</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                час назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Правозащитника Игоря Каляпина закидали яйцами во время пресс конференции</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                2 года назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Центр "Э" попросил "Луркоморье" раскрыть авторов статей о Кадырове и коктейле Молотова</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                2 года назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">В Грозном освобождены правозащитники из Комитета против пыток</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                6 дней назад
+                                            </div>
+                                        </li>
+                                        <li class="search-result">
+                                            <div class="search-result__title li__header">
+                                                <a href="#">Кадыров обвинил комитет против пыток в провокации</a>
+                                            </div>
+                                            <div class="search-result__time">
+                                                год назад
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="show-more"><a href="#">Показать еще</a></div>
+                                </div>
+
+                                <h4>Каталог</h4>
+                                <div class="col-md-4 col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Дорожно-знаковая информация</a></li>
+                                        <li><a href="#">Знаки</a></li>
+                                        <li><a href="#">Конструктив</a></li>
+                                        <li><a href="#">Электронно-импульсная продукция</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Светофорное регулирование</a></li>
+                                        <li><a href="#">Строительство</a></li>
+                                        <li><a href="#">Содержание</a></li>
+                                        <li><a href="#">Автоматизированная система управления дорожного движения (АСУДД)</a></li>
+                                        <li><a href="#">Светофорные объекты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4  col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Разметка дорог и парковок</a></li>
+                                        <li><a href="#">Автомобильные дороги и аэродромы</a></li>
+                                        <li><a href="#">Парковки</a></li>
+                                        <li><a href="#">Демаркировка</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Средства организации дорожного движения</a></li>
+                                        <li><a href="#">Катафот</a></li>
+                                        <li><a href="#">Искуственные неровности</a></li>
+                                        <li><a href="#">Прочее</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4  col-sm-6">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Битумно-полимерная пластика</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="li__header"><a href="#">Металлоконструкции</a></li>
+                                        <li><a href="#">Шумозащитные экраны</a></li>
+                                        <li><a href="#">Остановочные комплексы</a></li>
+                                        <li><a href="#">Автономное уличное освещение</a></li>
+                                        <li><a href="#">Пешеходные ограждения</a></li>
+                                        <li><a href="#">Монтаж металлоизделий</a></li>
+                                        <li><a href="#">Товары народного потребления</a></li>
+                                    </ul>
+                                </div>
+                                <h4>Комплексные решения</h4>
+                                <h4>Группа компаний &laquo;Бриз&raquo;</h4>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-Центр</a></li>
+                                        <li class="li__header"><a href="#">Краснодарск</a></li>
+                                        <li class="li__header"><a href="#">Гранд</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li class="li__header"><a href="#">Бриз-запад</a></li>
+                                        <li class="li__header"><a href="#">Айтехникс</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="#">Новости группы</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            
+                <div class="content">
+                    
+                    <div class="content__main-slide">
+                        <div class="content__main-slide__title">
+                            <div class="content__main-slide__title__text container-fluid content-wrapper">
+                                <h1>Комплексные решения обустройства дорог</h1>
+                            </div>
+                        </div>
+                        <div class="content__main-slide__columns">
+                            <div class="content__main-slide__columns__text container-fluid content-wrapper">
+                                <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
+                                    <h3><a href="#">Благоустройство</a></h3>
+                                    <p>Мобильные светофоры применяются в местах ведения ремонтных работ для организации реверсивного движения. Надежная складная стойка мобильного светофора поз</p>
+                                </div>
+                                <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
+                                    <h3><a href="#">Комплексные решения</a></h3>
+                                    <p>Мобильные светофоры применяются в местах ведения ремонтных работ для организации реверсивного движения.</p>
+                                </div>
+                                <div class="content__main-slide__columns__text__item col-md-4 col-sm-4">
+                                    <h3><a href="#">Группа компаний &laquo;Бриз&raquo;</a></h3>
+                                    <p>Компания осуществляет нанесение дорожной разметки всех видов современной техникой. Все машины компании оборудованы инновационной системой обратной связи, которая позволяет оперативно контролировать работы.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="safedrive-parent" class="content__safe-drive" style="overflow:hidden;">
+                        <div class="content__safe-drive__title container-fluid content-wrapper">
+                            <h1>Организуем безопасное дорожное движение и удобные парковки</h1>
+                        </div>
+                        <div id="safedrive" class="content__safe-drive__text container-fluid">
+                            <img src="img/main__crossroads-scheme.png" alt="" id="crossroads-scheme">
+
+                            <div id="safedrive-message-00" class="safedrive-message">
+                                <h3><a href="#">Металлоконструкции</a></h3>
+                                <p>Комплекс технических, программных и организационных мер, сбор и обработка информации о транспортных потоках и оптимизирующих.</p>
+                                <div id="message-line-00" class="message-line"></div>
+                            </div>
+                            
+                            <div id="safedrive-message-01" class="safedrive-message">
+                                <h3><a href="#">Битумно-полимерная мастика</a></h3>
+                                <p>Мастика битумная, специфический изоляционный материал для строительных задач. Увеличивает срок службы асфальтобетонного покрытия.</p>
+                                <div id="message-line-01" class="message-line"></div>
+                            </div>
+                            
+                            <div id="safedrive-message-02" class="safedrive-message">
+                                <h3><a href="#">Дорожно-знаковая информация</a></h3>
+                                <p>Собственные технологии - двойная отбортовка по всему периметру, длительный период эксплуатации изделия</p>
+                                <div id="message-line-02" class="message-line"></div>
+                            </div>
+                            
+                            <div id="safedrive-message-03" class="safedrive-message">
+                                <h3><a href="#">Средства организации дорожного движения</a></h3>
+                                <p>Комплекс услуг по благоустройству автодорог и парковок, искусственные неровности, сигнальные столбики, делиниаторы, пластиковые барьеры</p>
+                                <div id="message-line-03" class="message-line"></div>
+                            </div>
+                            
+                            <div id="safedrive-message-04" class="safedrive-message">
+                                <h3><a href="#">Разметка дорог и парковок</a></h3>
+                                <p>Средство визуального ориентирования и информирования об условиях и режимах движения на участке дороги.</p>
+                                <div id="message-line-04" class="message-line"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="content__group-company-geo">
+
+                        <div class="content__group-company-geo__main container-fluid content-wrapper">
+                            <h1>Группа компаний &laquo;Бриз&raquo;</h1>
+                            <p>Комплекс услуг по благоустройству автодорог и парковок:  искусственные неровности, сигнальные столбики, делиниаторы, пластиковые барьеры.</p>
+                            <p>Использование передовых технологий и слаженная работа команды позволили достигнуть существенных результатов, что является предметом гордости. Компании группы обеспечивают полный цикл по обустройству автомобильных дорог от производства дорожных знаков, нанесения дорожной разметки и автоматизированной системы управления дорожного движения (АСУДД) до комплексного обустройства пешеходных переходов интеллектуальными системами.</p>
+                        </div>
+
+                        <div class="content__group-company-geo__offices container-fluid content-wrapper">
+                            <div class="row">
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__briz-c.png" alt="">
+                                    <h2><a href="#">Бриз-Центр</a></h2>
+                                    <p>Компания осуществляет нанесение дорожной разметки всех видов современнейшей техникой с применением новейших технологий. Машины компании оборудованы инновационной системой обратной связи, которая позволяет оперативно контролировать выполнение работ.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__kdz.png" alt="">
+                                    <h2><a href="#">Красдорзнак</a></h2>
+                                    <p>Собственные инновационные разработки компании, производственные мощности и высокотехнологичное оборудование последнего поколения обеспечивают выпуск продукции с высокими эксплуатационными характеристиками.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__briz-z.png" alt="">
+                                    <h2><a href="##">Бриз-Запад</a></h2>
+                                    <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
+                                    <a href="#">Каталог продукции</a>
+                                </div>
+                                </div>
+                            <div class="row">
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__itech.png" alt="">
+                                    <h2><a href="#">Айтехникс</a></h2>
+                                    <p>Компания обеспечена собственным парком разметочной техники и специалистами  высокого уровня, выполняющими разметку автомобильных дорог, парковок различными материалами.</p>
+                                    <a href="#">Светофорное регулирование</a>
+                                </div>
+                                <div class="content__group-company-geo__offices__item col-md-3 col-sm-4 col-xs-12">
+                                    <img src="img/contacts__logo__grand.png" alt="">
+                                    <h2><a href="#">Гранд</a></h2>
+                                    <p>является аккредитованной лабораторией, проводящей испытания различных видов продукции не только в лабораторных условиях, но, непосредственно, на месте производства работ.</p>
+                                    <a href="#">Лабораторный контроль</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content__group-company-geo__map container-fluid content-wrapper">
+                            <h2>География</h2>
+                            <a class="fancybox" href="img/main__map.png"><img src="img/main__map.png" alt=""></a>
+                            <ol>
+                                <li>Красноярский край</li>
+                                <li>Республика Хакасия</li>
+                                <li>Иркутская область</li>
+                                <li>Кемеровская область</li>
+                                <li>Хабаровский край</li>
+                                <li>Республика Бурятия</li>
+                                <li>Республика Саха (Якутия)</li>
+                                <li>Амурская область</li>
+                                <li>Алатйский край</li>
+                                <li>Забайкальский край</li>
+                                <li>Республика Тыва</li>
+                                <li>Республика Алтай</li>
+                                <li>Новосибирская область</li>
+                                <li>Московская область</li>
+                                <li>Ленинградская область</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="content__main-news">
+                        
+                        <div class="content__main-news__title container-fluid content-wrapper">
+                            <h2><a href="#">Новости компаний</a></h2>
+                        </div>
+                        <div class="content__main-news__feed container-fluid content-wrapper">
+                            <div class="content__main-news__feed__item col-md-3 col-sm-6 col-xs-6" id="news-1">
+                                <div class="content__main-news__feed__item__image-sample">
+                                    <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                </div>
+                                <div class="content__main-news__feed__item__image">
+                                    <a href="#"><img src="img/news__next2.png" alt=""></a>
+                                </div>
+                                <div class="content__main-news__feed__item__text">
+                                    <h3><a href="#">Заголовок новости&nbsp;1</a></h3>
+                                    <p>Собственные инновационные разработки компании, производст&shy;венные мощности и высоко&shy;технологичное обору sdkfj skj osij osij posaij osdij opsidj posaij spodij fsopdijf ospidj posdij opsisdf asuidfosd fuhsado iuhsdofu hsoiduh foiusdh oiudshoiushdoi uhsdoiu fhsoiduh foiusdh oiusdh  iousdh fi ouhsdif uhsdiu hsodiuh osiduh oisudh oiusdh foiusdh oiush ousdh ousdh oiusdhf oisudh oisdh oiusdh oiushd ioushdoifu hsdoiuf hsoiduh oisudh foishdoiu fhsoiudh foisudh oish oiusdh foiuh oiusdhfo iushd oifuhsdoifsdiuhf sdoifu hsdof iuhsdoiuf hsdiouhf j osidj pij opsidj fopsidj sidj opsidj fposidj osidj sodij sopdij opsdij psodij ospdij psodij posdij posidj fopsdijf osidj posidj opsdij posdij opsdij opsidj psdioj дование последнего поколения обеспечивают выпуск продукции с высокими эксплуатацион&shy;ными характеристиками</p>
+                                    <time datetime="2012-11-28">28.11.2014</time>
+                                </div>
+                            </div>
+                            <div class="content__main-news__feed__item col-md-3 col-sm-6 col-xs-6" id="news-1">
+                                <div class="content__main-news__feed__item__image">
+                                    <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                </div>
+                                <div class="content__main-news__feed__item__text">
+                                    <h3><a href="#">Заголовок новости&nbsp;2</a></h3>
+                                    <time datetime="2012-11-28">28.11.2014</time>
+                                </div>
+                            </div>
+                            <div class="content__main-news__feed__item col-md-3 col-sm-6 col-xs-6" id="news-1">
+                                <div class="content__main-news__feed__item__image">
+                                    <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                </div>
+                                <div class="content__main-news__feed__item__text">
+                                    <h3><a href="#">Заголовок новости&nbsp;3 с длинным заголовком в несколько строк</a></h3>
+                                    <p>Собственные инновационные разработки компании, производствен&shy;ные мощности и высоко&shy;технологичное оборудование.</p>
+                                    <time datetime="2015-05-12">12.05.2015</time>
+                                </div>
+                            </div>
+                            <div class="content__main-news__feed__item col-md-3 col-sm-6 col-xs-6" id="news-1">
+                                <div class="content__main-news__feed__item__image">
+                                    <a href="#"><img src="img/main__news__null.png" alt=""></a>
+                                </div>
+                                <div class="content__main-news__feed__item__text">
+                                    <h3><a href="#">Заголовок новости&nbsp;4</a></h3>
+                                    <time datetime="2016-02-01">1.02.2016</time>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            
+        <footer>
+            <div class="footer">
+                <div class="footer__menu">
+                    <div class="container-fluid content-wrapper">
+                        <div class="footer__menu__stable">
+                            <nav>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Комплексные решения</a></li>
+                                <li><a href="#">Группа компаний БРИЗ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container-fluid content-wrapper">
+                        <div class="hidden-xs">
+                            <div class="footer__copyright__bureauit col-md-5 col-sm-4">
+                                Разработка сайта &mdash; <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
+                            </div>
+                            <div class="footer__copyright__contacts col-md-7 col-sm-8">
+                                <div class="footer__copyright__contacts__fb col-md-4 col-sm-4">
+                                    <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png">&nbsp;facebook</a>
+                                </div>
+                                <div class="footer__copyright__contacts__email col-md-8 col-sm-8">
+                                    <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                                    <a href="mailto:briz@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs">
+                            <div class="footer__copyright__briz col-md-12 col-sm-12">
+                                &copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены
+                            </div>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <div class="footer__copyright__contacts__email col-xs-5">
+                                <a href="tel:+78000000000" class="tellink">8&nbsp;800&nbsp;000&nbsp;00&nbsp;00</a>
+                            </div>
+                            <div class="footer__copyright__contacts__email col-xs-5" id="ftel">
+                                <a href="mailto:briz-centr@briz2001.ru" class="emaillink">briz@briz2001.ru</a>
+                            </div>
+                            <div class="footer__copyright__contacts__fb col-xs-2">
+                                <a href="https://ru-ru.facebook.com/%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%91%D0%A0%D0%98%D0%97-246158192203639/"><img src="img/fb__icon.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <div class="footer__copyright__briz col-xs-8">
+                                <div class="briz-m-wrapper">&copy; 2016 &laquo;Группа компаний БРИЗ&raquo; Все права защищены</div>
+                            </div>
+                            <div class="footer__copyright__bureauit col-xs-4" id="f-mob-crb">
+                                <div>Разработка &mdash;<br>
+                                <a href="http://bureauit.ru/"><img src="img/footer__bureauit.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/scroll-safedrive.js"></script>
+    <script>
+        $(document.body).ready(function () {
+
+            $(".fancybox").fancybox();
+
+            $('.header__menu__hamburger, .header__menu__search, .header__menu__dropdown__close, .header__top__buttons').click(function () {
+                $('.header__menu__dropdown').slideToggle('slow', function () {
+                    if ($(this).is(":visible")) {
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').addClass("nav-shadow");
+                    } else {
+                        $('#nav-contacts, #nav-catalog, #nav-group, #nav-complex').removeClass("nav-shadow");
+                    }
+                });
+            });
+
+
+            //массив объектов
+            availableTags = [
+                {label:"Испанский", value:"es"},
+                {label:"Итальянский", value:"it"},
+                {label:"Английский", value:"en"},
+                {label:"Англиканский", value:"an"},
+                {label:"Китайский", value:"zh"},
+                {label:"Русский", value:"ru"}
+            ];
+
+            // задаем массив в качестве источника слов для автозаполнения.
+            $("[data-head-search]").autocomplete({
+                source: availableTags, 
+                open: function() {
+                    $(this)
+                        .autocomplete("widget")
+                        .appendTo("#ac-main")
+                        .css("position", "static");
+                }
+            });
+
+            $(function() {
+                $('.content__main-news__feed__item').matchHeight(true);
+            });
+
+            $(function() {
+                $('.content__main-news__feed__item__image').matchHeight({ target: $('.content__main-news__feed__item__image-sample') });
+            });
+        });
+    </script>
+</body>
+
+</html>

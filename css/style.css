@@ -2325,6 +2325,7 @@ textarea:focus {
   }
 }
 .content__safe-drive {
+  overflow: hidden
   /*
 		for a interactive picture:
 		padding-top: 65px;
@@ -2383,6 +2384,15 @@ textarea:focus {
 		}
 		*/
 }
+@media (max-width: 768px) {
+  .content__safe-drive {
+    display: none;
+  }
+}
+.content__safe-drive__title {
+  z-index: 2;
+  position: relative;
+}
 .content__safe-drive__title h1 {
   margin-top: 53px;
 }
@@ -2395,6 +2405,17 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15px;
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  position: relative;
+  right: -490px;
+  top: -245px
+  /*&.position0 {
+                transition: all .5s linear;
+                position: relative;
+                right: -490px;
+                top: -245px;
+            }*/
 }
 .content__safe-drive__text a:link {
   text-decoration: none;
@@ -2410,6 +2431,146 @@ textarea:focus {
 }
 .content__safe-drive__text img {
   width: 100%;
+}
+.content__safe-drive__text.position1 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: -350px;
+  top: -138px;
+}
+.content__safe-drive__text.position2 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: -240px;
+  top: -31px;
+}
+.content__safe-drive__text.position3 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: -100px;
+  top: 76px;
+}
+.content__safe-drive__text.position4 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: 40px;
+  top: 183px;
+}
+.content__safe-drive__text.position5 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: 180px;
+  top: 290px;
+}
+.content__safe-drive__text.position6 {
+  -webkit-transition: all 0.8s linear;
+          transition: all 0.8s linear;
+  right: 320px;
+  top: 397px
+  /*
+                transform: translateX(140px);
+                transform: translateY(107px);
+                */
+}
+.content__safe-drive .safedrive-message {
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out;
+  z-index: 3;
+}
+.content__safe-drive .safedrive-message h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.content__safe-drive .safedrive-message a:link {
+  text-decoration: none;
+  color: #004899;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(175, 201, 224, 0.3);
+}
+.content__safe-drive .safedrive-message p {
+  color: #666;
+}
+.content__safe-drive .safedrive-message-shown {
+  opacity: 1 !important;
+  -webkit-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out;
+}
+.content__safe-drive #safedrive-message-00 {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+.content__safe-drive #safedrive-message-01 {
+  position: fixed;
+  bottom: 5%;
+  right: 15%;
+}
+.content__safe-drive #safedrive-message-02 {
+  position: fixed;
+  top: 25%;
+  right: 30%;
+}
+.content__safe-drive #safedrive-message-03 {
+  position: fixed;
+  bottom: 19%;
+  left: 25%;
+}
+.content__safe-drive #safedrive-message-04 {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+.content__safe-drive .message-line {
+  pointer-events: none;
+  position: absolute;
+  height: 2px;
+  background-color: red;
+}
+.content__safe-drive #message-line-00 {
+  right: 50%;
+  bottom: calc(0% - 68px);
+  width: 175px;
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+.content__safe-drive #message-line-01 {
+  right: 31%;
+  top: calc(0% - 50px);
+  width: 201px;
+  -webkit-transform: rotate(-151deg);
+      -ms-transform: rotate(-151deg);
+          transform: rotate(-151deg);
+}
+.content__safe-drive #message-line-02 {
+  right: 50%;
+  bottom: calc(0% - 78px);
+  width: 201px;
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+.content__safe-drive #message-line-03 {
+  right: calc(0% - 137px);
+  top: 50%;
+  width: 145px;
+  -webkit-transform: rotate(-27deg);
+      -ms-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+.content__safe-drive #message-line-04 {
+  right: calc(0% - 194px);
+  bottom: 0%;
+  width: 201px;
+  -webkit-transform: rotate(-158deg);
+      -ms-transform: rotate(-158deg);
+          transform: rotate(-158deg);
 }
 .content__group-company-geo {
   padding-top: 15px;
