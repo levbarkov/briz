@@ -2283,19 +2283,32 @@ textarea:focus {
 		}
 	}
 	&__safe-drive {
-        @media(max-width:768px) {
+        @media(max-width:991px) {
             display: none;
         }
         overflow: hidden;
 		&__title {
             z-index: 2;
             position: relative;
+            transition: all 0.8s linear;
 			h1 {
 			margin-top: 53px;
+            transition: all 0.8s linear;
 			@media (max-width: 480px) {
 				font-size: 32px;
 				}
 			}
+            &-fixed {
+                z-index: 2;
+                position: fixed;
+                top: 0;
+                left: 30px;
+                transition: all 0.8s linear;
+                h1 {
+                    margin-top: 15px;
+                    transition: all 0.8s linear;
+                }
+            }
 		}
 		&__text {
 			a {
@@ -2318,7 +2331,7 @@ textarea:focus {
 			padding-left: 0;
 			padding-right: 0;
 			margin-bottom: 15px;
-            transition: all 0.8s linear;
+            transition: all 0.6s linear;
             position: relative;
             right: -490px;
             top: -245px;
@@ -2329,32 +2342,132 @@ textarea:focus {
                 top: -245px;
             }*/
             &.position1 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: -350px;
                 top: -138px;
             }
+            &.position11 {
+                transition: all 0.6s linear;
+                right: -328px;
+                top: -116.5px;
+            }
+            &.position12 {
+                transition: all 0.6s linear;
+                right: -306px;
+                top: -95px;
+            }
+            &.position13 {
+                transition: all 0.6s linear;
+                right: -284px;
+                top: -73.5px;
+            }
+            &.position14 {
+                transition: all 0.6s linear;
+                right: -262px;
+                top: -52px;
+            }
             &.position2 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: -240px;
                 top: -31px;
             }
+            &.position21 {
+                transition: all 0.6s linear;
+                right: -212px;
+                top: -9.5px;
+            }
+            &.position22 {
+                transition: all 0.6s linear;
+                right: -184px;
+                top: 12px;
+            }
+            &.position23 {
+                transition: all 0.6s linear;
+                right: -156px;
+                top: 33.5px;
+            }
+            &.position24 {
+                transition: all 0.6s linear;
+                right: -128px;
+                top: 55px;
+            }
             &.position3 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: -100px;
                 top: 76px;
             }
+            &.position31 {
+                transition: all 0.6s linear;
+                right: -72px;
+                top: 97.5px;
+            }
+            &.position32 {
+                transition: all 0.6s linear;
+                right: -44px;
+                top: 119px;
+            }
+            &.position33 {
+                transition: all 0.6s linear;
+                right: -16px;
+                top: 140.5px;
+            }
+            &.position34 {
+                transition: all 0.6s linear;
+                right: 12px;
+                top: 162px;
+            }
             &.position4 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: 40px;
                 top: 183px;
             }
+            &.position41 {
+                transition: all 0.6s linear;
+                right: 68px;
+                top: 204.5px;
+            }
+            &.position42 {
+                transition: all 0.6s linear;
+                right: 96px;
+                top: 226px;
+            }
+            &.position43 {
+                transition: all 0.6s linear;
+                right: 124px;
+                top: 247.5px;
+            }
+            &.position44 {
+                transition: all 0.6s linear;
+                right: 152px;
+                top: 269px;
+            }
             &.position5 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: 180px;
                 top: 290px;
             }
+            &.position51 {
+                transition: all 0.6s linear;
+                right: 208px;
+                top: 311.5px;
+            }
+            &.position52 {
+                transition: all 0.6s linear;
+                right: 236px;
+                top: 333px;
+            }
+            &.position53 {
+                transition: all 0.6s linear;
+                right: 264px;
+                top: 354.5px;
+            }
+            &.position54 {
+                transition: all 0.6s linear;
+                right: 292px;
+                top: 376px;
+            }
             &.position6 {
-                transition: all 0.8s linear;
+                transition: all 0.6s linear;
                 right: 320px;
                 top: 397px;
                 /*
@@ -2370,11 +2483,20 @@ textarea:focus {
             width: 260px;
             padding: 20px;
             box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            transition: all 0.8s ease-out;
+            transition: all 0.1s ease-out;
             z-index: 3;
+            position: fixed;
+            top: 10px;
+            left: 30px;
             h3 {
                 font-size: 18px;
                 font-weight: 700;
+            }
+            h5 {
+                color: #666;
+                a:link {
+                    color: #666;
+                }
             }
             a:link {
                 text-decoration: none;
@@ -2385,78 +2507,28 @@ textarea:focus {
             p {
                 color: #666;
             }
+            &-under-title {
+                top: 125px !important;
+            }
         }
         .safedrive-message-shown {
             opacity: 1 !important;
-            transition: all 0.8s ease-out;
+            transition: all 0.1s ease-out;
         }
 
         #safedrive-message-00 {
-            position: fixed;
-            top: 5%;
-            right: 5%;
         }
         #safedrive-message-01 {
-            position: fixed;
-            bottom: 5%;
-            right: 15%;
+
         }
         #safedrive-message-02 {
-            position: fixed;
-            top: 25%;
-            right: 30%;
+
         }
         #safedrive-message-03 {
-            position: fixed;
-            bottom: 19%;
-            left: 25%;
+
         }
         #safedrive-message-04 {
-            position: fixed;
-            top: 5%;
-            left: 5%;
-        }
 
-        .message-line {
-            pointer-events: none;
-            position: absolute;
-            height: 2px;
-            background-color: red;
-        }
-
-        #message-line-00 {
-            right: 50%;
-            bottom: ~"calc(0% - 68px)";
-            width: 175px;
-            transform: rotate(-50deg);
-        }
-
-        #message-line-01 {
-            right: 31%;
-            top: ~"calc(0% - 50px)";
-            width: 201px;
-            transform: rotate(-151deg);
-        }
-
-        #message-line-02 {
-            right: 50%;
-            bottom: ~"calc(0% - 78px)";
-            width: 201px;
-            transform: rotate(-50deg);
-        }
-
-        #message-line-03 {
-            right: ~"calc(0% - 137px)";
-            top: 50%;
-            width: 145px;
-            transform: rotate(-27deg);
-        }
-
-        #message-line-04 {
-            right: ~"calc(0% - 194px)";
-            bottom: 0%;
-            width: 201px;
-            transform: rotate(-158deg);
         }
 
 		/*
