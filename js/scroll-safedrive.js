@@ -77,5 +77,39 @@
             .setClassToggle('#safedrive-message-04', 'safedrive-message-shown')
             .addTo(controller);
 
-            
+            var safedrivemessageHide00 = new ScrollMagic.Scene({
+                triggerElement: '#geo-block',
+                triggerHook: 'onLeave',
+            })
+            .setClassToggle('#safedrive-message-00', 'non-displayed')
+            .addTo(controller);
+
+            var safedrivemessageHide01 = new ScrollMagic.Scene({
+                triggerElement: '#geo-block',
+                triggerHook: 'onLeave',
+            })
+            .setClassToggle('#safedrive-message-01', 'non-displayed')
+            .addTo(controller);
+
+            var safedrivemessageHide02 = new ScrollMagic.Scene({
+                triggerElement: '#geo-block',
+                triggerHook: 'onLeave',
+            })
+            .setClassToggle('#safedrive-message-02', 'non-displayed')
+            .addTo(controller);
+
+            var safedrivemessageHide03 = new ScrollMagic.Scene({
+                triggerElement: '#geo-block',
+                triggerHook: 'onLeave',
+            })
+            .setClassToggle('#safedrive-message-03', 'non-displayed')
+            .addTo(controller);
+
+            var safedrivemessageHide04 = new ScrollMagic.Scene({
+                triggerElement: '#geo-block',
+                triggerHook: 'onLeave',
+            })
+            .setClassToggle('#safedrive-message-04', 'non-displayed')
+            .addTo(controller);
+
         });

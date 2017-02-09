@@ -76,6 +76,9 @@ body h5 a:hover,
 body h6 a:hover {
   border-bottom: none;
 }
+.non-displayed {
+  display: none;
+}
 .fancybox-item,
 .fancybox-close {
   text-decoration: none !important;
@@ -2467,7 +2470,7 @@ textarea:focus {
 }
 .content__safe-drive__text.position14 {
   transition: all 0.6s linear;
-  right: -261.99999999px;
+  right: -262px;
   top: -52px;
 }
 .content__safe-drive__text.position2 {
