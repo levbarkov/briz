@@ -1211,7 +1211,7 @@ textarea:focus {
 }
 .content__news-one__main__text img {
   margin-top: 34px;
-  width: 100%;
+  max-width: 100%;
 }
 .content__news-one__main__text figcaption {
   width: 80%;
