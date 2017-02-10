@@ -369,6 +369,7 @@ textarea:focus {
 .header__menu nav li:hover {
   background-color: #2260a7;
 }
+.header__menu nav li.active,
 .header__menu nav li:active,
 .header__menu nav li:focus {
   background-color: #003d82;
@@ -1211,7 +1212,7 @@ textarea:focus {
 }
 .content__news-one__main__text img {
   margin-top: 34px;
-  max-width: 100%;
+  width: 100%;
 }
 .content__news-one__main__text figcaption {
   width: 80%;
@@ -1875,7 +1876,7 @@ textarea:focus {
   border-bottom: 1px solid;
   border-bottom-color: rgba(241, 201, 196, 0.3);
 }
-.content__rightbar__docs__item__name .doctype {
+.doctype, .docxtype {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1883,7 +1884,7 @@ textarea:focus {
   background-color: #2a5696;
   margin-left: 2px;
 }
-.content__rightbar__docs__item__name .ppttype {
+.ppttype, .pptxtype {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1891,7 +1892,7 @@ textarea:focus {
   background-color: #d04424;
   margin-left: 2px;
 }
-.content__rightbar__docs__item__name .exltype {
+.exltype, .xlsxtype {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1899,7 +1900,7 @@ textarea:focus {
   background-color: #1d7044;
   margin-left: 2px;
 }
-.content__rightbar__docs__item__name .pdftype {
+.pdftype, .pdfxtype {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2619,8 +2620,8 @@ textarea:focus {
 }
 .content__safe-drive .safedrive-message-shown {
   opacity: 1 !important;
-  position: fixed;
   transition: all 0.1s ease-out;
+  position: fixed;
 }
 .content__group-company-geo {
   padding-top: 15px;
@@ -3343,8 +3344,7 @@ footer .footer__menu li a:link {
   color: #004899;
   border-bottom-color: rgba(178, 200, 224, 0.3);
 }
-footer .footer__menu li a:hover,
-footer .footer__menu li a.active {
+footer .footer__menu li a:hover, footer .footer__menu li a.active {
   text-decoration: none;
   color: #e74c3c !important;
   border-bottom-color: rgba(248, 201, 196, 0.3);
@@ -3523,40 +3523,4 @@ footer .footer__copyright__contacts__email a:nth-child(2):hover {
   footer .footer__copyright .row {
     width: 100vw;
   }
-}
-.doctype,
-.docxtype {
-  font-size: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #2a5696;
-  margin-left: 2px;
-}
-.ppttype,
-.pptxtype {
-  font-size: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #d04424;
-  margin-left: 2px;
-}
-.exltype,
-.xlsxtype {
-  font-size: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #1d7044;
-  margin-left: 2px;
-}
-.pdftype,
-.pdfxtype {
-  font-size: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #d70a0a;
-  margin-left: 2px;
 }
