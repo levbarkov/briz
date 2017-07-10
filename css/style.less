@@ -269,8 +269,8 @@ textarea:focus {
 					border-bottom-color: rgba(248, 201, 196, 0.3);
 					}
     		    }
-    		    
-    		    
+
+
     		}
     	}
         &__buttons {
@@ -694,7 +694,7 @@ textarea:focus {
                                 }
                             }
                         }
-                        
+
                     }
                     &__image {
                         display: inline-block;
@@ -773,7 +773,7 @@ textarea:focus {
                                 }
                             }
                         }
-                        
+
                     }
                     &__image {
                         display: inline-block;
@@ -897,16 +897,16 @@ textarea:focus {
 		    color: #000;
 		    background-color: transparent;
 		}
-		a.list-group-item-success:focus, 
-		a.list-group-item-success:hover, 
-		button.list-group-item-success:focus, 
+		a.list-group-item-success:focus,
+		a.list-group-item-success:hover,
+		button.list-group-item-success:focus,
 		button.list-group-item-success:hover {
 			color: #000;
 			background-color: #f6f8fc;
 		}
-		a.list-group-item:focus, 
-		a.list-group-item:hover, 
-		button.list-group-item:focus, 
+		a.list-group-item:focus,
+		a.list-group-item:hover,
+		button.list-group-item:focus,
 		button.list-group-item:hover {
 		    color: #000;
 		    text-decoration: none;
@@ -1037,7 +1037,7 @@ textarea:focus {
 	}
 	&__contacts {
 		h1 {
-			margin: 32px 0; 
+			margin: 32px 0;
 			line-height: 1.19;
 		}
 		&__item {
@@ -1280,7 +1280,7 @@ textarea:focus {
                                 }
                             }
                         }
-                        
+
                     }
                     &__image {
                         display: inline-block;
@@ -1348,7 +1348,7 @@ textarea:focus {
                                 }
                             }
                         }
-                        
+
                     }
                     &__image {
                         display: inline-block;
@@ -1503,7 +1503,7 @@ textarea:focus {
 						}
 					}
 				}
-				
+
 			}
 			&__docs {
 				border: 1px solid #e5ecf5;
@@ -1802,7 +1802,7 @@ textarea:focus {
 				}
 				&__email {
 					margin-bottom: 13px;
-				} 
+				}
 			}
 			.itechniks {
 				background-color: #eae4e6;
@@ -1840,7 +1840,7 @@ textarea:focus {
 						text-transform: uppercase;
 						color: #fff;
 						background-color: #2a5696;
-						margin-left: 2px; 
+						margin-left: 2px;
 					}
 					.ppttype {
 						font-size: 10px;
@@ -1977,7 +1977,7 @@ textarea:focus {
                         font-size: 12px;
                     }
                 }
-                
+
             }
             &__image {
                 display: inline-block;
@@ -2051,7 +2051,7 @@ textarea:focus {
                         font-size: 12px;
                     }
                 }
-                
+
             }
             &__image {
                 display: inline-block;
@@ -2256,7 +2256,7 @@ textarea:focus {
 					display: inline;
 					}
 					p {
-					margin-top: 6px;	
+					margin-top: 6px;
 					font-weight: 400;
 					}
 					a {
@@ -2292,29 +2292,19 @@ textarea:focus {
         }
         overflow: hidden;
 		&__title {
-            z-index: 2;
             position: relative;
-            transition: all 0.8s linear;
 			h1 {
 			margin-top: 53px;
-            transition: all 0.8s linear;
+			@media (min-width: 1280px) {
+				max-width: 70%;
+			}
 			@media (max-width: 480px) {
 				font-size: 32px;
 				}
 			}
-            &-fixed {
-                z-index: 2;
-                position: fixed;
-                top: 0;
-                left: 30px;
-                transition: all 0.8s linear;
-                h1 {
-                    margin-top: 15px;
-                    transition: all 0.8s linear;
-                }
-            }
 		}
 		&__text {
+			position: relative;
 			a {
 				&:link {
 					text-decoration: none;
@@ -2331,167 +2321,15 @@ textarea:focus {
 			}
 			img {
 				width: 100%;
+				max-width: 100%;
 			}
-			padding-left: 0;
-			padding-right: 0;
-			margin-bottom: 15px;
-            transition: all 0.6s linear;
-            position: relative;
-            top: 0;
-            right: 0;
-            /*&.position0 {
-                transition: all .5s linear;
-                position: relative;
-                right: -490px;
-                top: -245px;
-            }*/
-            &.position1 {
-                transition: all 0.6s linear;
-                right: -350px;
-                top: -138px;
-            }
-            &.position11 {
-                transition: all 0.6s linear;
-                right: -328px;
-                top: -116.5px;
-            }
-            &.position12 {
-                transition: all 0.6s linear;
-                right: -306px;
-                top: -95px;
-            }
-            &.position13 {
-                transition: all 0.6s linear;
-                right: -284px;
-                top: -73.5px;
-            }
-            &.position14 {
-                transition: all 0.6s linear;
-                right: -262px;
-                top: -52px;
-            }
-            &.position2 {
-                transition: all 0.6s linear;
-                right: -240px;
-                top: -31px;
-            }
-            &.position21 {
-                transition: all 0.6s linear;
-                right: -212px;
-                top: -9.5px;
-            }
-            &.position22 {
-                transition: all 0.6s linear;
-                right: -184px;
-                top: 12px;
-            }
-            &.position23 {
-                transition: all 0.6s linear;
-                right: -156px;
-                top: 33.5px;
-            }
-            &.position24 {
-                transition: all 0.6s linear;
-                right: -128px;
-                top: 55px;
-            }
-            &.position3 {
-                transition: all 0.6s linear;
-                right: -100px;
-                top: 76px;
-            }
-            &.position31 {
-                transition: all 0.6s linear;
-                right: -72px;
-                top: 97.5px;
-            }
-            &.position32 {
-                transition: all 0.6s linear;
-                right: -44px;
-                top: 119px;
-            }
-            &.position33 {
-                transition: all 0.6s linear;
-                right: -16px;
-                top: 140.5px;
-            }
-            &.position34 {
-                transition: all 0.6s linear;
-                right: 12px;
-                top: 162px;
-            }
-            &.position4 {
-                transition: all 0.6s linear;
-                right: 40px;
-                top: 183px;
-            }
-            &.position41 {
-                transition: all 0.6s linear;
-                right: 68px;
-                top: 204.5px;
-            }
-            &.position42 {
-                transition: all 0.6s linear;
-                right: 96px;
-                top: 226px;
-            }
-            &.position43 {
-                transition: all 0.6s linear;
-                right: 124px;
-                top: 247.5px;
-            }
-            &.position44 {
-                transition: all 0.6s linear;
-                right: 152px;
-                top: 269px;
-            }
-            &.position5 {
-                transition: all 0.6s linear;
-                right: 180px;
-                top: 290px;
-            }
-            &.position51 {
-                transition: all 0.6s linear;
-                right: 208px;
-                top: 311.5px;
-            }
-            &.position52 {
-                transition: all 0.6s linear;
-                right: 236px;
-                top: 333px;
-            }
-            &.position53 {
-                transition: all 0.6s linear;
-                right: 264px;
-                top: 354.5px;
-            }
-            &.position54 {
-                transition: all 0.6s linear;
-                right: 292px;
-                top: 376px;
-            }
-            &.position6 {
-                transition: all 0.6s linear;
-                right: 320px;
-                top: 397px;
-                /*
-                transform: translateX(140px);
-                transform: translateY(107px);
-                */
-            }
 		}
         .safedrive-message {
-            opacity: 0;
-            display: none;
             position: absolute;
             background-color: #fff;
             width: 260px;
             padding: 20px;
             box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            transition: all 0.1s ease-out;
-            z-index: 3;
-            top: 10px;
-            left: 30px;
             h3 {
                 font-size: 18px;
                 font-weight: 700;
@@ -2515,25 +2353,32 @@ textarea:focus {
                 top: 125px !important;
             }
         }
-        .safedrive-message-shown {
-            opacity: 1 !important;
-            position: fixed;
-            transition: all 0.1s ease-out;
-        }
 
         #safedrive-message-00 {
+					top: 25%;
+					left: 2%;
+					@media (min-width: 1200px) {
+						top: 10%;
+						left: 3%;
+					}
         }
         #safedrive-message-01 {
-
+					top: 12%;
+					right: 2%;
         }
         #safedrive-message-02 {
-
+					top: 0;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
         }
         #safedrive-message-03 {
-
+					bottom: 10%;
+					right: 20%;
         }
         #safedrive-message-04 {
-
+					bottom: 5%;
+					left: 20%;
         }
 
 		/*
@@ -2594,7 +2439,7 @@ textarea:focus {
 		}
 		*/
 	}
-	
+
 	&__group-company-geo {
 		padding-top: 15px;
 		padding-bottom: 30px;
@@ -2612,7 +2457,7 @@ textarea:focus {
 			font-size: 14px;
 			color: #666;
 		}
-		
+
 		&__main {
 			p:nth-child(2) {
 				font-size: 18px;
@@ -2625,7 +2470,7 @@ textarea:focus {
 			h2 {
 				color: #004899;
 				font-weight: 700;
-				font-size: 18px; 
+				font-size: 18px;
 				margin-top: 15px;
 				margin-bottom: 8px;
 				a:hover {
@@ -2748,7 +2593,7 @@ textarea:focus {
                         font-weight: 400;
                         color: #666;
                     }
-                } 
+                }
                 /*
 				@media (max-width: 865px) {
 					height: 400px;
@@ -3357,7 +3202,7 @@ footer {
             		@media (max-width: 578px) {
                 		line-height: 20px;
                 	}
-            	
+
             	@media (min-width: 768px) {
             		margin-bottom: 17px;
             	}
@@ -3403,7 +3248,7 @@ footer {
             &__contacts {
                 text-align: right;
                 padding-right: 0;
-				
+
                 &__fb {
                     img {
                         margin-top: -3px;
