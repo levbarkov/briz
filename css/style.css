@@ -2471,6 +2471,12 @@ textarea:focus {
   top: 12%;
   right: 2%;
 }
+@media (min-width: 1200px) {
+  .content__safe-drive #safedrive-message-01 {
+    top: 6%;
+    right: 3%;
+  }
+}
 .content__safe-drive #safedrive-message-02 {
   top: 0;
   left: 0;
@@ -2480,6 +2486,11 @@ textarea:focus {
 .content__safe-drive #safedrive-message-03 {
   bottom: 10%;
   right: 20%;
+}
+@media (min-width: 1200px) {
+  .content__safe-drive #safedrive-message-03 {
+    right: 17%;
+  }
 }
 .content__safe-drive #safedrive-message-04 {
   bottom: 5%;
