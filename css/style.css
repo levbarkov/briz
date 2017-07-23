@@ -2463,7 +2463,7 @@ textarea:focus {
 }
 @media (min-width: 1200px) {
   .content__safe-drive #safedrive-message-00 {
-    top: 10%;
+    top: 18%;
     left: 3%;
   }
 }
@@ -2473,8 +2473,8 @@ textarea:focus {
 }
 @media (min-width: 1200px) {
   .content__safe-drive #safedrive-message-01 {
-    top: 6%;
-    right: 3%;
+    top: 4%;
+    right: 2%;
   }
 }
 .content__safe-drive #safedrive-message-02 {
@@ -2482,6 +2482,14 @@ textarea:focus {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .content__safe-drive #safedrive-message-02 {
+    top: 0;
+    left: 51%;
+    right: auto;
+    margin: inherit;
+  }
 }
 .content__safe-drive #safedrive-message-03 {
   bottom: 10%;
